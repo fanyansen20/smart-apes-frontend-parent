@@ -11,8 +11,6 @@ import "@fontsource/poppins/700.css";
 import "./App.scss";
 import "./styles/main.scss";
 
-// test
-
 // Routes
 import DesktopRoutes from "./routes/DesktopRoutes.js";
 import MobileRoutes from "./routes/MobileRoutes.js";
