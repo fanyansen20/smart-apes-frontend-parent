@@ -1,0 +1,35 @@
+.bundleCard {
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #bcc2ce;
+  height: calc(100% - 18%);
+  & .imageThumbnail {
+    width: 84px;
+    height: 84px;
+    border: 1px solid #dbdbdb;
+    & img {
+      object-fit: contain;
+      width: 84px;
+      height: 100%;
+      border-radius: 3.5px;
+    }
+  }
+  & .titleBundle {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  & .titleProduct {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  & .priceProduct {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  & .singleBundleContent {
+    min-height: 115px;
+    & .singleBundleProductTitle {
+      width: 259px;
+    }
+  }
+}

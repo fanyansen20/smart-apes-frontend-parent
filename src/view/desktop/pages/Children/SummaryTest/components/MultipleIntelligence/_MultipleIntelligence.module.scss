@@ -1,0 +1,5 @@
+@import "../KeyLearningDimensionSection/KeyLearningDimensionSection.module";
+
+.containerMultipleIntelligence {
+  @extend .containerKeyLearningDimension;
+}

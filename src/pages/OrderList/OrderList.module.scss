@@ -1,0 +1,369 @@
+@import "../../styles/theme/light-v2";
+
+.content {
+  margin-top: 20px;
+  & .title {
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      color: #333333;
+    }
+  }
+
+  & .filterProducts {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    & .filterButton {
+      font-weight: 700;
+      color: #7e54f1;
+      background-color: #f1ecff;
+      border-color: #7e54f1;
+      text-transform: none;
+      border-radius: 5px;
+      &:hover {
+        border-color: #7e54f1;
+      }
+    }
+  }
+}
+
+.container {
+  padding-bottom: 100px;
+  margin-top: 14px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 17px;
+  background-color: #fff;
+  border-radius: 5px;
+  & .categoryTab {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      width: 0;
+      display: none;
+    }
+    p {
+      padding-bottom: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #cccccc;
+      cursor: pointer;
+    }
+  }
+
+  & .cardElevation {
+    border: 1px solid #f3f3f3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  & .cardContainer {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    & .storeName {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      color: $sec-text-500;
+    }
+    & .cardHeader {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      & .blueLabel {
+        position: absolute;
+        top: 16.55px;
+        left: 0;
+        height: 23px;
+        width: 4px;
+        background-color: #7e54f1;
+        border-radius: 10px;
+      }
+      & .cardHeaderLeft {
+        p {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          color: #333333;
+          font-size: 14px;
+          font-weight: 600;
+          // & .MuiAlert-root .MuiAlert-message {
+          //   padding: 5px 0;
+          // }
+          & .cardId {
+            color: #7e54f1;
+            font-weight: 500;
+            font-size: 12px;
+          }
+          & .cardDate {
+            color: #c5c5c5;
+            font-weight: 500;
+            font-size: 12px;
+          }
+        }
+      }
+      & .cardHeaderRight {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+    }
+    & .cardHeaderDivider {
+      border-bottom: 1px solid #f0f0f0;
+    }
+    & .noteInfo {
+      margin-top: 20px;
+      padding: 12px 17px;
+      background-color: #f7f9fc;
+
+      & .noteMsg {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        & .ninjaVanText {
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+
+    & .cardBody {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-top: 16px;
+
+      & .titleContent {
+        font-weight: 600;
+        font-size: 12px;
+      }
+      & .bodyContent {
+        margin-top: 5px;
+        font-weight: 600;
+        font-size: 12px;
+        color: #a9a9a9;
+        word-wrap: break-word;
+      }
+      & .detailText {
+        color: #7a7a7a;
+        font-weight: 700;
+        font-size: 12px;
+      }
+
+      & .productSectionDivider {
+        border-right: 1px solid #f0f0f0;
+      }
+
+      & .productSection {
+        display: flex;
+        & .imageThumbnail {
+          width: 100px;
+          height: 100px;
+          border: 1px solid #dbdbdb;
+          & img {
+            object-fit: contain;
+            width: 100px;
+            height: 100%;
+            border-radius: 3.5px;
+          }
+        }
+        & .imageThumbnailSubOrder {
+          width: 90px !important;
+          height: 90px !important;
+          & img {
+            width: 90px !important;
+          }
+        }
+        & .titleProduct {
+          width: 259px;
+          font-weight: 700;
+          font-size: 12px;
+        }
+        & .titleSplittedProduct {
+          font-size: 13px !important;
+          font-style: normal;
+          line-height: normal !important;
+          color: #333333 !important;
+        }
+        & .priceProduct {
+          padding: 5px 0 4px 0;
+          font-weight: 500;
+          font-size: 12px;
+          color: #868686;
+        }
+        & .priceSplittedProduct {
+          color: #333333 !important;
+        }
+        & .noteProduct {
+          font-weight: 500;
+          font-size: 12px;
+          color: #868686;
+        }
+      }
+
+      & .addressSection {
+        width: 150px;
+        margin-left: 25px;
+      }
+
+      & .deliverySection {
+        margin-left: 30px;
+        width: 141px;
+      }
+
+      & .bookingCodeSection {
+        margin-left: 30px;
+      }
+
+      & .grandTotalSection {
+        & .contentGrandTotal {
+          display: flex;
+          align-items: center;
+          font-weight: 700;
+          font-size: 24px;
+          color: #7a7a7a;
+
+          & .iconCustom {
+            color: #cccccc;
+            width: 12.5px;
+            margin-left: 6.25px;
+          }
+        }
+      }
+    }
+    & .footerCard {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 8px;
+      gap: 4px;
+      & .buttonPayNow {
+        width: 130px;
+        height: 30px;
+        background-color: #7e54f1;
+        border-radius: 5px;
+        color: #fff;
+        // padding: 7px 0 8px 0;
+        p {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 16px;
+          text-transform: none;
+        }
+      }
+
+      & .buttonChatBuyer {
+        @extend .buttonPayNow;
+        color: #7e54f1;
+        margin: 0 5px 0 5px;
+        background-color: #fff;
+        border: 0.5px solid #7e54f1;
+
+        &:disabled {
+          color: rgba(0, 0, 0, 0.26) !important;
+          border: 0.5px solid rgba(0, 0, 0, 0.26) !important;
+        }
+
+        p {
+          display: flex;
+          align-items: center;
+          & .iconCustom {
+            width: 12.5px;
+            margin-right: 11px;
+          }
+        }
+      }
+      & .buttonOption {
+        @extend .buttonChatBuyer;
+        cursor: pointer;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+      }
+
+      & .menuAction {
+        border: 1px solid #cfcfcf;
+        border-radius: 5px;
+
+        & ul {
+          width: 187px;
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+
+          & li {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            color: #475467;
+            padding: 9px 24px;
+          }
+        }
+      }
+    }
+  }
+
+  & .bottomCard {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      padding-top: 35px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #cccccc;
+    }
+    & .MuiPagination-root {
+      background-color: red;
+      // font-weight: 600;
+      // font-size: 16px;
+    }
+  }
+}
+.subStatusLabel {
+  border: 1px solid #f04438;
+  padding: 0px 7px;
+  align-items: center;
+  padding: 0 7px !important;
+  font-size: 0.68rem !important;
+
+  & .subStatusIcon {
+    margin-right: 5px !important;
+    padding: 4px 0 !important;
+    font-size: 16px !important;
+  }
+
+  & .subStatusMessage {
+    padding: 0 !important;
+  }
+}
+
+.totalPriceHeader {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+}
+
+.totalPriceItem {
+  font-family: "Poppins";
+  font-style: normal;
+  justify-content: space-between;
+
+  & .totalPriceLabel {
+    font-weight: 600;
+    color: #7a7a7a;
+  }
+
+  & .totalPriceValue {
+    font-weight: 600;
+    color: #a9a9a9;
+  }
+}
+.totalDetailsLabel {
+  min-width: 220px;
+}

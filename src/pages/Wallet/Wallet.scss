@@ -1,0 +1,134 @@
+& .wallet-header {
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  border: 1px solid $tertiary-20;
+  background-color: $tertiary-10;
+  background-image: url("../../assets/images/illustration-transcation-success.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  & h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $tertiary-21;
+  }
+}
+
+& .wallet-transaction {
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  border: 1px solid $tertiary-20;
+  background-color: $tertiary-10;
+  margin-top: 1rem;
+
+  & .wallet-transaction-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    & h5 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $tertiary-21;
+    }
+
+    & h6 {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: $tertiary-3;
+      margin-top: 0.5rem;
+    }
+
+    & .wallet-filter {
+      display: flex;
+      align-items: flex-end;
+      gap: 0.5rem;
+    }
+
+    & button {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border: 1px solid $primary-8;
+      border-radius: 5px;
+      font-family: "Poppins";
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: $primary-8;
+    }
+  }
+
+  & .wallet-transaction-table {
+    & #wallet-table {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid $tertiary-20;
+      border-collapse: separate;
+
+      & thead > tr > th {
+        padding: 0.75rem 0;
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+
+      & tbody > tr > td {
+        padding: 0.75rem 0;
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #475467;
+        border-top: 1px solid $tertiary-20;
+      }
+
+      & .ref-number {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      & .status {
+        font-size: 0.775rem;
+        padding: 0.1rem 0.9rem;
+        border-radius: 1.25rem;
+      }
+
+      & .status__COMPLETED {
+        @extend .status;
+        color: $quinary-1;
+        background-color: $quinary-3;
+      }
+
+      & .status__PENDING {
+        @extend .status;
+        color: $senary-1;
+        background-color: $senary-3;
+      }
+
+      & .status__FAILED {
+        @extend .status;
+        color: $quaternary-1;
+        background-color: $quaternary-3;
+      }
+    }
+
+    & #wallet-table-pagination {
+      margin-top: 1em;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  & .no-wallet-history {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & h3 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $tertiary-15;
+    }
+  }
+}

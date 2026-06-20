@@ -1,0 +1,53 @@
+@import "../../../../../styles/theme/light-v2";
+
+.container {
+  flex-direction: column;
+  background-color: $text-0;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+
+  & .phoneNumberInput {
+    color: $sec-text-500;
+    background-color: $grey-0;
+    padding: 16px 8px;
+    margin-left: -1rem;
+  }
+
+  & p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  & .checkbox {
+    color: $brand-500;
+  }
+
+  span {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  & .buttonContainer {
+    & .submitButton {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    & .deleteButton {
+      background-color: transparent;
+      color: $error-500;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.5rem;
+    }
+  }
+}
+
+.modalButtonContainer {
+  & button {
+    font-size: 0.7rem;
+  }
+}

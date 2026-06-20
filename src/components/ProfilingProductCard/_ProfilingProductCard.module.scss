@@ -1,0 +1,59 @@
+@import "../../styles/theme/light-v2";
+
+.containerCardPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  background-color: $text-0;
+  border: 1px solid $grey-200;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+
+  transition: transform 0.5s ease;
+}
+
+.titlePProduct {
+  color: $text-500;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.discountLabel {
+  width: fit-content;
+  background-color: #7e54f133;
+  padding: 10px 12px;
+  color: $brand-500;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.realPrice {
+  font-weight: 600;
+  text-decoration: line-through;
+  color: $text-200;
+}
+
+.totalPrice {
+  font-size: 1.875;
+  font-weight: 700;
+  color: $text-500;
+}
+
+.benefitSection {
+  &,
+  textBenefit {
+    font-weight: 500;
+  }
+}
+
+.containerCardPrice:hover {
+  transform: translateY(-1rem);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}

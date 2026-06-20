@@ -1,0 +1,14 @@
+@import "../../../../styles/theme/light-v2";
+@import "../ProfileCentralCard/ProfileCentralCard.module";
+
+.assessmentTestContent {
+  @extend .learningProfileContent;
+
+  background-image: url("../../../../assets/images/ChildrenDashboard/illustration-assessment-test.svg");
+
+  & .btnAssessmentCentral {
+    @extend .btnProfileCentral;
+    background-color: #ff8cae;
+    color: $text-0;
+  }
+}

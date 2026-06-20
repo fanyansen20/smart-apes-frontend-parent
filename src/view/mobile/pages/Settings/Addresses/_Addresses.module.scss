@@ -1,0 +1,67 @@
+@import "../../../../../styles/theme/light-v2";
+
+.container {
+  background-color: $text-0;
+  padding-bottom: 4rem;
+
+  & .loadingContainer {
+    display: flex;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .listContainer {
+    overflow-y: auto;
+    max-height: calc(100vh - 4rem - 56px);
+    /* Firefox */
+    max-height: -moz-calc(100vh - 4rem - 56px);
+    /* WebKit */
+    max-height: -webkit-calc(100vh - 4rem - 56px);
+    /* Opera */
+    max-height: -o-calc(100vh - 4rem - 56px);
+  }
+
+  & .emptyContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100vh - 88px - 1rem);
+
+    & img {
+      width: 80%;
+    }
+
+    & .title {
+      font-weight: 700;
+    }
+
+    & .subtitle {
+      font-size: 0.9rem;
+    }
+  }
+
+  & .button {
+    margin-bottom: 1rem;
+
+    & p {
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.buttonContainer {
+  background-color: $text-0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1rem 1rem 1rem;
+
+  & .button {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}

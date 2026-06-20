@@ -1,0 +1,16 @@
+@import "../../../../styles/theme/light-v2";
+
+.modalContainer {
+  background-color: $text-0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  & p {
+    font-weight: 700;
+  }
+}

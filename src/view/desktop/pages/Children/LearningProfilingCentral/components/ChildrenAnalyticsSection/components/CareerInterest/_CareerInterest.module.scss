@@ -1,0 +1,17 @@
+@import "../TypologySection/TypologySection.module";
+
+b {
+  font-weight: 700;
+}
+
+.textParagraph {
+  color: $text-500;
+  line-height: 1rem;
+  text-align: justify;
+}
+
+.containerCodesSummary {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  gap: 10px;
+}

@@ -1,0 +1,39 @@
+@import "../../../../../styles/theme/light-v2";
+
+.bundleCard {
+  padding: 16px;
+  height: calc(100% - 18%);
+  width: 100%;
+  min-width: 250px;
+  border-radius: 8px;
+  border: 1px solid $grey-200;
+  & .imageThumbnail {
+    width: 84px;
+    height: 84px;
+    border: 1px solid $grey-200;
+    & img {
+      object-fit: contain;
+      width: 84px;
+      height: 100%;
+      border-radius: 3.5px;
+    }
+  }
+  & .titleBundle {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  & .titleProduct {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  & .priceProduct {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  & .singleBundleContent {
+    min-height: 115px;
+    & .singleBundleProductTitle {
+      width: 250px;
+    }
+  }
+}

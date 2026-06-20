@@ -1,0 +1,29 @@
+.containerKeyLearningDimension {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  & .transparentPlanetBG {
+    position: absolute;
+    right: -30rem;
+  }
+
+  & .transparentPlanetBG2 {
+    position: absolute;
+    bottom: 34%;
+    right: -30rem;
+  }
+
+  & .transparentPlanetBG3 {
+    position: absolute;
+    bottom: 15%;
+    left: -25rem;
+  }
+
+  & .ufoOrangeBG {
+    position: absolute;
+    left: -10rem;
+    top: 28%;
+  }
+}

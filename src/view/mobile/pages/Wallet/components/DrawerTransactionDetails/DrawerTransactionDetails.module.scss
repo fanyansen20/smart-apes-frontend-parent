@@ -1,0 +1,24 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.container {
+  & hr {
+    margin: 0;
+  }
+
+  & .infoItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+
+    & .infoTitle {
+      font-size: 12px;
+      font-weight: 400;
+      color: $text-500;
+    }
+
+    & .infoText {
+      @extend .infoTitle;
+      font-weight: 700;
+    }
+  }
+}

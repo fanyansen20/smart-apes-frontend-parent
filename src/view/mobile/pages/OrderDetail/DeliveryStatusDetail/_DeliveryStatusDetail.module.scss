@@ -1,0 +1,16 @@
+@import "../../../../../styles/theme/light-v2";
+
+.deliveryTimelineContainer {
+  margin-top: 20px;
+  padding: 1vh;
+  // padding-bottom: 33px;
+  border: 2px solid $grey-100;
+  border-style: dashed;
+  & .dateTimeText {
+    color: $grey-200;
+    font-size: 12px;
+  }
+  & .messageText {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,151 @@
+@import "../../../../../styles/theme/light-v2";
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 10px 0px;
+  gap: 10px;
+  & .cardNotification {
+    background-color: $warning-50;
+    border: 1px solid $warning-500;
+    border-radius: 10px;
+    padding: 8px 16px;
+    gap: 5px;
+  }
+  & .titleContent {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  & .bodyContent {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    color: $grey-600;
+    word-wrap: break-word;
+  }
+  & .detailText {
+    color: $text-400;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  & .productSection {
+    display: flex;
+    flex-direction: row;
+
+    & .imageThumbnail {
+      width: 100px;
+      height: 100px;
+      border: 1px solid $grey-500;
+      & img {
+        object-fit: contain;
+        width: 100px;
+        height: 100%;
+        border-radius: 3.5px;
+      }
+    }
+    & .imageThumbnailSubOrder {
+      width: 90px !important;
+      height: 90px !important;
+      & img {
+        width: 90px !important;
+      }
+    }
+    & .titleProduct {
+      // width: 259px;
+      font-weight: 700;
+      font-size: 12px;
+      text-wrap: balance;
+    }
+    & .titleSplittedProduct {
+      font-size: 13px !important;
+      font-style: normal;
+      line-height: normal !important;
+      color: $text-500 !important;
+    }
+    & .priceProduct {
+      padding: 5px 0 4px 0;
+      font-weight: 500;
+      font-size: 12px;
+      color: $text-400;
+    }
+    & .priceSplittedProduct {
+      color: $text-500 !important;
+    }
+    & .noteProduct {
+      font-weight: 500;
+      font-size: 12px;
+      color: $text-400;
+    }
+  }
+
+  & .addressSection {
+    width: 150px;
+    margin-left: 25px;
+  }
+
+  & .deliverySection {
+    margin-left: 30px;
+    width: 141px;
+  }
+
+  & .bookingCodeSection {
+    margin-left: 30px;
+  }
+
+  & .grandTotalSection {
+    & .contentGrandTotal {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: $text-400;
+
+      & .iconCustom {
+        color: $text-200;
+        width: 12.5px;
+        margin-left: 6.25px;
+      }
+    }
+  }
+}
+
+.productCardContainer {
+  display: flex;
+  border: 1px solid $grey-200;
+  border-radius: 14px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 0px 10px 8px 10px;
+  & .productCard {
+    padding: 10px 0px;
+    & .cardBody {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.orderDetailShopName {
+  display: flex;
+  align-items: center;
+  margin-top: 1vh;
+  .shopName {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.deliveryDetailContainer {
+  display: flex;
+  width: 100%;
+  padding-left: 0.25rem;
+  justify-content: flex-start;
+  .deliveryDetailText {
+    flex: 1;
+    font-size: 12px;
+    color: $text-500;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}

@@ -1,0 +1,170 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.title {
+  margin-bottom: 10px;
+  margin-top: 1rem;
+
+  & p {
+    font-weight: 700;
+  }
+}
+
+.programTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  & p {
+    font-weight: 700;
+  }
+}
+
+.seeMoreTitle {
+  color: $brand-500;
+  display: flex;
+  cursor: pointer;
+
+  & p {
+    align-self: baseline;
+    font-weight: 600;
+    font-size: 14px !important;
+    color: $brand-500 !important;
+  }
+}
+
+.borderContainer {
+  border-width: 1px;
+  border-color: $grey-200 !important;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.programCardContainer {
+  @extend .borderContainer;
+
+  display: flex;
+  flex-direction: row;
+  background-color: $text-0;
+  gap: 0.3rem;
+  align-items: center;
+  padding: 1em;
+
+  & .programDetail {
+    display: flex;
+    align-items: center;
+
+    & img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 5px;
+      margin-right: 1rem;
+    }
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    & h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-500;
+      margin-bottom: 0.3rem;
+    }
+
+    & h5 {
+      font-size: 12px;
+      font-weight: 500;
+      color: $text-300;
+    }
+  }
+
+  & .collapse {
+    transform: rotate(180deg);
+  }
+}
+
+.programExpand {
+  margin-left: 2.5rem;
+  border-left: 1px solid $brand-500;
+  padding-top: 0.5rem;
+
+  & .programExpandItem {
+    @extend .borderContainer;
+    margin: 0 0 0.5rem 8px;
+    padding: 0.5rem;
+    display: flex;
+
+    & .programExpandDetail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+
+      & h3 {
+        font-size: 12px;
+        font-weight: 700;
+        color: $text-500;
+        margin-bottom: 0.3rem;
+      }
+
+      & h5 {
+        font-size: 10px;
+        font-weight: 500;
+        color: $text-300;
+      }
+    }
+
+    & img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 5px;
+      margin-right: 1rem;
+    }
+
+    & .progressCourseContainer {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+
+      & .progressCourse {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+
+        & .progress-bar {
+          width: 100%;
+          border-radius: 5px;
+          height: 0.4rem;
+          background-color: $text-50;
+          color: $brand-500;
+
+          & .MuiLinearProgress-bar {
+            background-color: $brand-500;
+            border-radius: 0 5px 5px 0;
+          }
+        }
+
+        & p {
+          font-size: 10px;
+          font-weight: 700;
+          color: $text-500;
+          min-width: 1.5rem;
+          text-align: right;
+        }
+      }
+    }
+
+    &::before {
+      content: " ";
+      position: relative;
+      top: 19px;
+      left: -22px;
+      width: 0.688rem;
+      height: 0.563rem;
+      border-radius: 50%;
+      background-color: $brand-500;
+    }
+  }
+}

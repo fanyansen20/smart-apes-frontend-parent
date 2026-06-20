@@ -1,0 +1,37 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.title {
+  color: $grey-400;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: $sec-text-500;
+  font-size: 12px;
+}
+
+.contentTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: $grey-400;
+}
+
+.contentSubtitle {
+  font-size: 12px;
+  color: $grey-400;
+  text-align: justify;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.summaryHeader {
+  font-size: 12px;
+  color: $brand-500;
+  font-weight: 700;
+}
+
+b {
+  font-weight: 700;
+}

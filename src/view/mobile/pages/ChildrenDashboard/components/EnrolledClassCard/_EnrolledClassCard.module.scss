@@ -1,0 +1,105 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.title {
+  margin-bottom: 10px;
+  margin-top: 1rem;
+
+  & p {
+    font-weight: 700;
+  }
+}
+
+.classTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  & p {
+    font-weight: 700;
+  }
+}
+
+.seeMoreTitle {
+  color: $brand-500;
+  display: flex;
+  cursor: pointer;
+
+  & p {
+    align-self: baseline;
+    font-weight: 600;
+    font-size: 14px !important;
+    color: $brand-500 !important;
+  }
+}
+
+.borderContainer {
+  border-width: 1px;
+  border-color: $grey-200 !important;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.classCardContainer {
+  @extend .borderContainer;
+
+  display: flex;
+  flex-direction: row;
+  background-color: $text-0;
+  gap: 0.3rem;
+  align-items: center;
+  padding: 1em;
+
+  & .classCard {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    cursor: pointer;
+
+    & .classCardContent {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .classCardTextContainer {
+        flex-direction: column;
+
+        & h5 {
+          font-size: 12px;
+          font-weight: 500;
+          color: $text-300;
+        }
+
+        & .classCardContentLeft {
+          & h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: $text-500;
+            margin-bottom: 0.3rem;
+          }
+
+          ::before {
+            content: " ";
+            border: 2.5px solid $brand-500;
+            border-radius: 10px;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.noClass {
+  @extend .borderContainer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+
+  & p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $text-500;
+  }
+}

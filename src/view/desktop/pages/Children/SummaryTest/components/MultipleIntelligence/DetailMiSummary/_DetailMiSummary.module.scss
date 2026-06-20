@@ -1,0 +1,60 @@
+@import "../../../../../../../../styles/theme/light-v2";
+
+.containerDetailMiSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & .descriptionSummary {
+    color: $text-300;
+    line-height: 1.875rem;
+    font-size: 1.125rem;
+    text-align: justify;
+  }
+
+  & .cardKeyCharacteristics {
+    border: 2px solid #ccbcff;
+    border-radius: 1.25rem;
+    display: flex;
+
+    overflow: hidden;
+
+    & .leftBarTitle {
+      display: flex;
+      align-items: center;
+      background: #b39bff;
+      padding: 3.1rem;
+
+      & p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        transform: rotate(-180deg);
+        color: $text-0;
+        writing-mode: tb-rl;
+        text-wrap: nowrap;
+      }
+    }
+
+    & .tableSummary {
+      display: grid;
+      grid-template-columns: auto auto;
+
+      & .titleSummary {
+        display: flex;
+        align-items: center;
+
+        padding: 1.25rem 2.5rem;
+        background-color: #f6f3ff;
+        color: $brand-500;
+        font-weight: 700;
+        font-size: 1.125rem;
+      }
+
+      & .contentSummary {
+        color: $text-300;
+        padding: 1.25rem 2.5rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+}

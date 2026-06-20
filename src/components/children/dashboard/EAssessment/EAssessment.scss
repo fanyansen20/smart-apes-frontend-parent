@@ -1,0 +1,82 @@
+.containerEAssessment {
+  background-color: $tertiary-10;
+  border-radius: 5px;
+  min-height: 7.7rem;
+  padding: 1em;
+
+  & .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid $tertiary-8;
+
+    & h3 {
+      font-family: "Mulish";
+      font-size: 1rem;
+      font-weight: 700;
+      color: $tertiary-14;
+    }
+
+    & h5 {
+      font-family: "Mulish";
+      font-size: 0.625rem;
+      font-weight: 400;
+      color: $tertiary-16;
+      cursor: pointer;
+    }
+  }
+
+  & .eassessment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $tertiary-18;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+
+    & .eassessment-info {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.3rem;
+    }
+
+    & h3 {
+      font-family: "Mulish";
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: $tertiary-14;
+      line-height: 1rem;
+    }
+
+    & h5 {
+      font-family: "Poppins";
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: $tertiary-16;
+    }
+
+    & button {
+      font-family: "Poppins";
+      font-size: 0.5rem;
+      font-weight: 600;
+    }
+  }
+
+  & .noClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: 5rem;
+
+    & p {
+      font-family: "Mulish";
+      font-size: 1rem;
+      font-weight: 700;
+      color: $tertiary-14;
+    }
+  }
+}

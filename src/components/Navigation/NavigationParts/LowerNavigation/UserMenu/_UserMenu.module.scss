@@ -1,0 +1,170 @@
+@use "../../../../../styles/breakpoints";
+
+.menus {
+  @include breakpoints.media(xs) {
+    display: none;
+  }
+  @include breakpoints.media(md) {
+    display: flex;
+  }
+  align-items: center;
+  flex-grow: 0;
+  margin-left: 1rem;
+
+  & .cartDiv {
+    display: flex;
+    position: relative;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    & .cartImageIcon {
+      position: relative;
+      width: 20px;
+      height: 30px;
+    }
+
+    & .divider {
+      margin-left: 20px;
+      width: 1px;
+      height: 25px;
+      background-color: $tertiary-6;
+    }
+
+    & .cartNumber {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 14px;
+      min-height: 12px;
+      position: absolute;
+      top: -5px;
+      padding: 1px;
+      right: 8px;
+      background-color: $quaternary-2;
+      font-size: 7px;
+      font-weight: 500;
+      color: $tertiary-10;
+      border-radius: 7px;
+      border: 2px solid $tertiary-10;
+    }
+  }
+
+  & .userMenu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 3px;
+    & .iconArrowDown {
+      color: $tertiary-4;
+      font-size: 25px;
+    }
+  }
+
+  & .buttonBecomeMember {
+    @include breakpoints.media(xs) {
+      display: none;
+    }
+    @include breakpoints.media(md) {
+      display: flex;
+    }
+
+    align-items: center;
+    margin-left: 10px;
+    background-color: $primary-7;
+    padding: 8px 10px;
+    border-radius: 5px;
+
+    & .imgAuthNavBarIcon {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      margin-right: 9px;
+    }
+    & .titleButtonBottom {
+      font-size: 12px;
+      font-weight: 500;
+      color: $tertiary-10;
+    }
+  }
+
+  & .buttonMember {
+    @include breakpoints.media(xs) {
+      display: none;
+    }
+    @include breakpoints.media(md) {
+      display: flex;
+    }
+
+    align-items: center;
+    margin-left: 10px;
+    border: 1px solid $primary-7;
+    padding: 8px 10px;
+    border-radius: 5px;
+
+    & .imgAuthNavBarIcon {
+      position: relative;
+      width: 18px;
+      height: 18px;
+      margin-right: 9px;
+    }
+    & .titleButtonBottom {
+      font-size: 12px;
+      font-weight: 500;
+      color: $primary-7;
+    }
+  }
+}
+
+.menuUser {
+  & .MuiPaper-root {
+    border-radius: 10px;
+  }
+
+  & .userList {
+    background-color: transparent;
+    cursor: default;
+
+    & .user {
+      display: flex;
+      gap: 1rem;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      & .profile {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        & .name {
+          font-weight: 700;
+          font-size: 16px;
+          color: #6c6b6b;
+        }
+
+        & .rank {
+          font-weight: 500;
+          font-size: 11px;
+          color: #f0c014;
+        }
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  & .menuItem {
+    & .menuList {
+      padding: 7px;
+      display: flex;
+      gap: 1rem;
+      color: $tertiary-22;
+    }
+
+    &:hover {
+      * {
+        color: #6c6b6b;
+      }
+    }
+  }
+}

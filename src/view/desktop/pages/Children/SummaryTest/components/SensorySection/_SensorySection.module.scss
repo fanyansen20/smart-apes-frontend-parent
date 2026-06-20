@@ -1,0 +1,28 @@
+@import "../KeyLearningDimensionSection/KeyLearningDimensionSection.module";
+@import "../../../../../../../styles/theme/light-v2";
+
+.sensoryContainer {
+  @extend .containerKeyLearningDimension;
+
+  & .containerDoughnutChart {
+    display: flex;
+    justify-content: center;
+
+    & .doughnutChart {
+      width: 700px !important;
+      height: 700px !important;
+    }
+  }
+
+  & .contentSummaryResult {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & .textContent {
+      line-height: 1.123rem;
+      color: $text-300;
+      text-align: justify;
+    }
+  }
+}

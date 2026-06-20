@@ -1,0 +1,35 @@
+.containerInputFile {
+  position: relative;
+  & .iconClose {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    color: red;
+  }
+
+  & .uploadFile {
+    border-radius: 5px;
+    border: 1px dashed #7e54f1b2;
+    background-color: #fafafa;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 0.7rem;
+    color: #c5c5c5;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    & .photo {
+      overflow: hidden;
+      max-height: 150px;
+      max-width: 150px;
+    }
+  }
+}

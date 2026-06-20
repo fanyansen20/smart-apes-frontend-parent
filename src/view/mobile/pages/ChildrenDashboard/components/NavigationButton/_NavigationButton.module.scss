@@ -1,0 +1,98 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.btn__navigation {
+  position: relative;
+  border-radius: 5px;
+  aspect-ratio: 1;
+  display: flex;
+  cursor: pointer;
+  font-family: "Mulish";
+  font-size: 18px;
+  font-weight: 700;
+
+  & p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mulish";
+    font-weight: 700;
+    color: $grey-800;
+  }
+
+  & .navigation__flag {
+    fill: $error-400;
+    position: absolute;
+    top: -4px;
+    right: 1px;
+    width: 8.5px;
+  }
+}
+
+.btn__active {
+  border: 1.7px solid $brand-500;
+  background-image: linear-gradient(
+    90deg,
+    $brand-300,
+    $brand-300 25%,
+    transparent 25%,
+    transparent 100%
+  );
+  background-image: -webkit-linear-gradient(
+    90deg,
+    $brand-300,
+    $brand-300 25%,
+    transparent 25%,
+    transparent 100%
+  );
+
+  & p {
+    align-items: flex-start;
+    padding-top: 25%;
+  }
+}
+
+.btn__active__false {
+  border: 1.7px solid $error-500;
+  background-image: linear-gradient(
+    90deg,
+    $error-500,
+    $error-500 25%,
+    transparent 25%,
+    transparent 100%
+  );
+  background-image: -webkit-linear-gradient(
+    90deg,
+    $error-500,
+    $error-500 25%,
+    transparent 25%,
+    transparent 100%
+  );
+
+  & p {
+    align-items: flex-start;
+    padding-top: 25%;
+  }
+}
+
+.btn__answered {
+  border: 1.7px solid $brand-500;
+  background-color: $brand-300;
+
+  & p {
+    color: $text-0;
+  }
+}
+
+.btn__answered__false {
+  border: 1.7px solid $error-500;
+  background-color: $error-500;
+
+  & p {
+    color: $text-0;
+  }
+
+  & .navigation__flag {
+    fill: $text-0;
+  }
+}

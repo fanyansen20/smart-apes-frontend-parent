@@ -1,0 +1,87 @@
+@import "../../../../styles/theme/light-v2";
+
+.bannerProfileChild {
+  & img {
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+.imageProfileSection {
+  display: flex;
+  justify-content: flex-end;
+
+  & .avatarProfile {
+    border: 3px solid $text-0;
+    position: absolute;
+    left: 1rem;
+    transform: translateY(-50%);
+
+    width: 120px;
+    height: 120px;
+  }
+
+  & button {
+    margin: 1rem 0 1.5rem 0;
+  }
+}
+
+.nameContainer {
+  & .childName {
+    font-weight: 600;
+  }
+
+  & .childLevel {
+    font-size: 12px;
+    color: $text-200;
+    font-weight: 600;
+  }
+}
+
+.childDetailContainer {
+  & .childDetailText {
+    color: $sec-text-500;
+    font-weight: 600;
+  }
+}
+
+.assignCard {
+  overflow: hidden;
+  z-index: 2;
+  color: $text-0;
+
+  background: $brand-500 url("../../../../assets/images/ChildrenDashboard/background-assign-card.svg") no-repeat center;
+  background-size: cover;
+
+  padding: 2.24rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  & .title {
+    font-size: 20px;
+    font-weight: 500;
+
+    & b {
+      font-weight: 700;
+    }
+  }
+
+  & .subTitle {
+    @extend .title;
+    font-size: 12px;
+  }
+
+  & button {
+    font-size: 12px;
+  }
+}
+
+.container {
+  padding: 1rem 0;
+  background-color: $text-0;
+}

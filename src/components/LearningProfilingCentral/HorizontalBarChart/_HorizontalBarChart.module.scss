@@ -1,0 +1,19 @@
+@use "../../../styles/breakpoints";
+@import "../../../styles/theme/light-v2";
+
+.container {
+  display: flex;
+  justify-content: center;
+  border: 1px $sec-text-200 solid;
+  border-radius: 8px;
+
+  @include breakpoints.media(xs) {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  @include breakpoints.media(md) {
+    width: auto;
+    padding: 2rem 6rem 2rem 2rem;
+  }
+}

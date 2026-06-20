@@ -1,0 +1,14 @@
+@import "../../../../../../../styles/theme/light-v2";
+
+.btnTakeTest {
+  width: 32px;
+  height: 32px;
+  background-color: $brand-500;
+  border-radius: 8px;
+}
+
+.btnBordered {
+  @extend .btnTakeTest;
+  background-color: $text-0;
+  border: 1px solid $brand-500;
+}

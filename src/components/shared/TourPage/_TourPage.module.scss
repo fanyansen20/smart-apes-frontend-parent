@@ -1,0 +1,33 @@
+.containerTooltip {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & h6 {
+    font-size: 14px;
+    color: #344054;
+    font-weight: 600;
+  }
+
+  & p {
+    max-width: 320px;
+    color: #667085;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1rem;
+  }
+}
+
+.btnSkip {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+}
+
+.btnDontShow {
+  @extend .btnSkip;
+  margin-right: 1.4rem;
+}

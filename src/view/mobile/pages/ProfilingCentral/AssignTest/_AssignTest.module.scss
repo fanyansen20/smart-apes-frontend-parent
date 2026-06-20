@@ -1,0 +1,26 @@
+@import "../../../../../styles/theme/light-v2";
+
+.container {
+  margin-top: 0.3rem;
+  background-color: $text-0;
+
+  & .title {
+    font-weight: 700;
+  }
+
+  & .subtitle {
+    font-size: 14px;
+  }
+
+  & .buttonContainer {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+
+    & .submitButton {
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}

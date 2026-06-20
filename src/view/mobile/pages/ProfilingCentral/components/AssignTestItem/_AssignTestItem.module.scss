@@ -1,0 +1,50 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.borderContainer {
+  border-width: 1px;
+  border-color: $grey-200 !important;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.title {
+  color: $text-500;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: $sec-text-500;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.itemContainer {
+  @extend .borderContainer;
+
+  padding: 1rem;
+}
+
+.itemSelectedContainer {
+  @extend .itemContainer;
+
+  border-color: $brand-500 !important;
+  background-color: $brand-0;
+}
+
+.itemContentContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.radioInactive {
+  padding-left: 0;
+  color: $grey-200;
+}
+
+.radioActive {
+  @extend .radioInactive;
+
+  color: $brand-500 !important;
+}

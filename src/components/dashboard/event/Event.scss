@@ -1,0 +1,49 @@
+.container-event {
+  background-color: $tertiary-10;
+  border-radius: 5px;
+  padding: 0.5em;
+  border: 1px solid #efefef;
+
+  & .profile-image {
+    width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  & .container-event-detail {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  & .event__date {
+    font-size: 8px;
+    font-weight: 500;
+    color: $tertiary-5;
+  }
+
+  & .event__name {
+    font-size: 12px;
+    font-weight: 600;
+    color: $tertiary-14;
+  }
+
+  & .event__detail_container {
+    display: flex;
+    gap: 1em;
+
+    & .event__detail {
+      display: flex;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      color: $tertiary-5;
+
+      & svg {
+        color: $tertiary-1;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.container {
+  max-height: calc(100vh * 0.8);
+  max-width: 100vw;
+  overflow-y: scroll;
+
+  & .description {
+    color: $sec-text-500;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+}

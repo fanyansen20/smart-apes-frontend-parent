@@ -1,0 +1,23 @@
+@import "../../../../styles/theme/light-v2";
+
+.container {
+  background-color: $text-0;
+
+  .title {
+    font-size: 10px;
+    color: $text-200;
+    padding-top: 0.5rem;
+  }
+
+  .menuButton {
+    padding: 1rem 0;
+    border-bottom: 1px solid $grey-200;
+    justify-content: space-between;
+    align-items: center;
+
+    & p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

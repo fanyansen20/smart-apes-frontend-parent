@@ -1,0 +1,359 @@
+@use "../../../styles/breakpoints";
+
+.containerAssessmentCentral {
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+
+  & .circleTopLeft {
+    position: absolute;
+    width: 25.875rem;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    top: 3rem;
+    left: -15.813rem;
+    background: #85dff3;
+    opacity: 0.3;
+    filter: blur(6.375rem);
+    z-index: 0;
+  }
+
+  & .circleTopRight {
+    position: absolute;
+    width: 25.875rem;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    top: 1rem;
+    right: -15.813rem;
+    background: #ffb84c;
+    opacity: 0.2;
+    filter: blur(11.25rem);
+    z-index: 0;
+  }
+
+  & .circleBotRight {
+    position: absolute;
+    width: 25.875rem;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    bottom: 1rem;
+    right: -15.813rem;
+    background: #bc3ce9;
+    opacity: 0.15;
+    filter: blur(11.25rem);
+    z-index: 0;
+  }
+
+  & .content {
+    position: relative;
+
+    @include breakpoints.media(xs) {
+      padding: 0.5rem;
+    }
+    @include breakpoints.media(md) {
+      padding: 0.7rem 3rem 3rem 3rem;
+    }
+
+    z-index: 1;
+
+    & .title {
+      font-family: "Mulish";
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: $tertiary-14;
+    }
+
+    & .profileCard {
+      border: 1px solid $tertiary-6;
+      border-radius: 5px;
+      padding: 1rem;
+      background-color: $tertiary-10;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .wrapperAvatar {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      & .dividerProfile {
+        width: 1px;
+        height: 5rem;
+        border-right: 1px solid $tertiary-6;
+      }
+
+      & .titleText {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $tertiary-5;
+        margin-bottom: 0.5rem;
+      }
+
+      & .description {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $tertiary-15;
+      }
+
+      & .levelBtn {
+        border: 1px solid $tertiary-6;
+        background-color: $tertiary-7;
+        font-size: 0.625rem;
+        font-weight: 700;
+        color: $tertiary-2;
+      }
+
+      & .gearBtn {
+        margin-left: 0.5rem;
+        border: 1px solid $tertiary-6;
+        background-color: $tertiary-7;
+      }
+    }
+
+    & .assessmentCard {
+      border: 1px solid $tertiary-17;
+      border-radius: 5px;
+      padding: 1rem;
+      background-color: $tertiary-10;
+      margin-top: 1rem;
+
+      & hr {
+        border-bottom: 1px solid $tertiary-17;
+      }
+
+      & .noAssessment {
+        text-align: center;
+        font-family: "Mulish";
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: italic;
+        color: $tertiary-14;
+      }
+
+      & .levelUp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+
+        & h3 {
+          color: $tertiary-14;
+          font-size: 1.25rem;
+          font-weight: 700;
+        }
+
+        & h5 {
+          color: $tertiary-16;
+          font-size: 0.875rem;
+          font-weight: 600;
+        }
+      }
+
+      & .header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        & p {
+          font-family: "Mulish";
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: $tertiary-14;
+        }
+
+        & svg {
+          stroke: $tertiary-6;
+          color: $tertiary-10;
+        }
+      }
+
+      & .wrapperContent {
+        margin-top: 1rem;
+        border: 1px solid $tertiary-17;
+        border-radius: 5px;
+
+        & h3 {
+          text-align: center;
+          padding: 1rem 0;
+          font-family: "Mulish";
+          font-size: 1rem;
+          font-weight: 700;
+          color: $tertiary-14;
+        }
+
+        & .itemWrapper {
+          padding: 0.5rem 1rem 1rem 1rem;
+
+          & .testItem {
+            padding: 0.5rem;
+            border: 1px solid $tertiary-17;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+
+            & p {
+              text-align: center;
+              font-family: "Mulish";
+              font-size: 1rem;
+              font-weight: 500;
+              color: $tertiary-5;
+            }
+
+            & .done {
+              color: $quinary-1;
+            }
+
+            & .notDone {
+              color: $quaternary-1;
+            }
+
+            & div {
+              align-items: center;
+            }
+
+            & .btnWrapper {
+              padding-left: 1rem;
+              display: flex;
+              justify-content: center;
+
+              & button {
+                border: 1px solid $primary-2;
+
+                & .MuiTouchRipple-child {
+                  background-color: $primary-2;
+                }
+
+                & p {
+                  margin-left: 0.3rem;
+                  font-family: "Poppins";
+                  font-size: 0.625rem;
+                  font-weight: 700;
+                  color: $primary-2;
+                }
+              }
+            }
+
+            & .btnWrapperResult {
+              display: flex;
+              gap: 0.5rem;
+              justify-content: center;
+              padding-left: 1rem;
+
+              & button {
+                border: 1px solid $primary-2;
+                border-radius: 5px;
+                min-width: 0;
+                min-height: 0;
+                padding: 0.4rem 0.6rem;
+
+                & .MuiTouchRipple-child {
+                  background-color: $primary-2;
+                }
+
+                & svg {
+                  padding: 0;
+                }
+
+                & p {
+                  margin-left: 0.3rem;
+                  font-family: "Poppins";
+                  font-size: 0.625rem;
+                  font-weight: 700;
+                  color: $primary-2;
+                }
+              }
+            }
+          }
+
+          & .testItemDisabled {
+            position: relative;
+            padding: 0.5rem;
+            border: 1px solid $tertiary-17;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+            box-shadow: 200px 200px 400px 200px rgba(248, 248, 248, 0.47) inset;
+            -webkit-box-shadow: 200px 200px 400px 200px
+              rgba(248, 248, 248, 0.47) inset;
+            -moz-box-shadow: 200px 200px 400px 200px rgba(248, 248, 248, 0.47)
+              inset;
+
+            & .overlay {
+              position: absolute;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              margin-top: -8px;
+              width: 100%;
+              left: 0;
+              right: 0;
+              margin-left: auto;
+              margin-right: auto;
+              background-color: rgba(248, 248, 248, 0.47);
+              z-index: 2;
+              backdrop-filter: blur(1.5px);
+
+              & .overlayContent {
+                display: flex;
+                gap: 0.5rem;
+                padding: 0.5rem;
+
+                & p {
+                  font-family: "Mulish";
+                  font-size: 1rem;
+                  font-weight: 700;
+                  color: $tertiary-13;
+                }
+              }
+            }
+
+            & p {
+              text-align: center;
+              font-family: "Mulish";
+              font-size: 1rem;
+              font-weight: 500;
+              color: $tertiary-5;
+            }
+
+            & div {
+              align-items: center;
+            }
+
+            & .btnWrapper {
+              padding-left: 1rem;
+              display: flex;
+              justify-content: center;
+
+              & button {
+                border: 1px solid $tertiary-5;
+
+                & svg {
+                  stroke: $tertiary-5;
+                }
+
+                & p {
+                  margin-left: 0.3rem;
+                  font-family: "Poppins";
+                  font-size: 0.625rem;
+                  font-weight: 700;
+                  color: $tertiary-5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .skeleton {
+      margin-top: 1rem;
+      height: 15em;
+    }
+  }
+}

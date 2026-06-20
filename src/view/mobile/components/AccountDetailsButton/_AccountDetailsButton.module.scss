@@ -1,0 +1,30 @@
+@import "../../../../styles/theme/light-v2";
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: $grey-200;
+  margin: 1.5rem 1rem;
+  padding-bottom: 1.5rem;
+
+  & .titleContainer {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+  }
+
+  & p {
+    display: flex;
+    align-self: baseline;
+    font-weight: 600;
+    font-size: 16px !important;
+    color: $text-500;
+  }
+
+  & .valueText {
+    color: $success-500;
+  }
+}

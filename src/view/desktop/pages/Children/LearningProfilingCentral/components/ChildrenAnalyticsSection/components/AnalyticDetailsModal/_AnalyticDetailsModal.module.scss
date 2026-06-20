@@ -1,0 +1,14 @@
+@import "../../../../../../../../../styles/theme/light-v2";
+
+.containerExplainModal {
+  & h6 {
+    color: $text-500;
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+
+  & p {
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+}

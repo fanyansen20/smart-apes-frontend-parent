@@ -1,0 +1,204 @@
+@import "../../styles/palette";
+@import "../../styles/theme/light-v2";
+
+@page {
+  size: A4;
+  margin: 0mm;
+}
+
+.container {
+  font-family: "Poppins";
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  background-color: $tertiary-10;
+
+  & .appBar {
+    background-color: $primary-8;
+    text-align: right;
+    padding: 0.3em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    @media print {
+      display: none !important;
+    }
+
+    & button {
+      background-color: $tertiary-10;
+      text-transform: none;
+      color: $primary-8;
+      font-family: "Poppins";
+      font-weight: 600;
+    }
+  }
+
+  & .content {
+    margin-top: 50px;
+    display: flex;
+    line-height: 1.48;
+    justify-content: center;
+
+    & .wrapper {
+      width: 21cm;
+
+      & .tableHeader {
+        background-color: rgba(204, 204, 204, 0.6);
+
+        & th {
+          padding: 12px;
+          font-size: 14px;
+          font-weight: 600;
+          color: $tertiary-14;
+        }
+
+        & th:nth-child(1) {
+          border-radius: 2px 0 0 2px;
+        }
+
+        & th:nth-child(4) {
+          border-radius: 0 2px 2px 0;
+        }
+      }
+
+      & .tableContent {
+        & td {
+          padding: 12px;
+          vertical-align: top;
+          font-size: 12px;
+          font-weight: 600;
+          color: $tertiary-22;
+        }
+      }
+
+      & hr {
+        border-style: none;
+        border-bottom: 1px solid $tertiary-9;
+      }
+
+      & .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5em;
+
+        & h1 {
+          font-size: 14px;
+          font-weight: 600;
+          color: $tertiary-14;
+          margin: 0;
+          text-align: right;
+        }
+
+        & .invoiceText {
+          font-size: 12px;
+          font-weight: 600;
+          color: $primary-8;
+          text-align: right;
+        }
+      }
+
+      & .orderSummary {
+        margin-top: 2em;
+
+        & table {
+          width: 100%;
+          border-spacing: 2px;
+          border-collapse: separate;
+
+          & td {
+            padding: 1px;
+            vertical-align: top;
+          }
+
+          & .title {
+            font-size: 14px;
+            font-weight: 600;
+            color: $tertiary-14;
+          }
+
+          & .label {
+            font-size: 12px;
+            font-weight: 400;
+            color: $tertiary-22;
+            padding: 0.7em 0 1.5em 0;
+          }
+        }
+      }
+
+      & .orderItem {
+        margin-top: 12px;
+
+        & table {
+          border-spacing: 0;
+          width: 100%;
+
+          & tr {
+            page-break-inside: avoid;
+          }
+        }
+      }
+
+      & .deliveryService {
+        margin-top: 12px;
+
+        & table {
+          border-spacing: 0;
+          width: 100%;
+
+          & tr {
+            page-break-inside: avoid;
+          }
+        }
+      }
+
+      & .totalPrice {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1em;
+        margin-top: 1em;
+
+        & .label {
+          font-size: 14px;
+          font-weight: 600;
+          color: $tertiary-14;
+        }
+
+        & .data {
+          font-size: 16px;
+          font-weight: 600;
+          color: $tertiary-22;
+        }
+
+        & .discountText {
+          @extend .label;
+
+          font-size: 12px;
+          color: $sec-text-500;
+        }
+      }
+    }
+  }
+
+  & .stamp {
+    position: absolute;
+    background-attachment: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -10rem;
+  }
+}
+
+.btnDefault {
+  margin-top: 1em;
+  background-color: $primary-8;
+  text-transform: none;
+  font-family: "Poppins";
+  color: $tertiary-10;
+}
+
+.btnDefault:hover {
+  background-color: $tertiary-14;
+}

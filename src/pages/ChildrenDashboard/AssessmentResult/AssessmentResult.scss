@@ -1,0 +1,261 @@
+.containerAssessmentResult {
+  padding: 1.5rem 0;
+  background-color: $tertiary-10;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  & .assessmentHeader {
+    background-size: auto;
+    background-position: -50% 100%;
+    background-repeat: no-repeat;
+    background-color: $primary-8;
+    padding: 1rem 1.3rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & p {
+      font-family: "Mulish";
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: $tertiary-10;
+    }
+
+    & svg {
+      cursor: pointer;
+    }
+  }
+
+  & .questionSection {
+    margin-top: 1rem;
+    padding: 1.5rem 1rem;
+    background-color: $tertiary-8;
+    border-radius: 5px;
+
+    & h3 {
+      font-family: "Mulish";
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $tertiary-2;
+      margin-bottom: 0.5rem;
+    }
+
+    & h5 {
+      font-family: "Mulish";
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: $tertiary-5;
+      margin-bottom: 1rem;
+    }
+
+    & .containerImages {
+      display: flex;
+      gap: 1rem;
+
+      & .questionImage {
+        background-color: $tertiary-10;
+        width: 14rem;
+        aspect-ratio: 1;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+
+      & .__react_modal_image__medium_img {
+        background-color: $tertiary-10;
+      }
+    }
+
+    & p {
+      font-family: "Poppins";
+      font-size: 0.938rem;
+      font-weight: 400;
+      text-align: justify;
+      color: $tertiary-2;
+      line-height: 1.3rem;
+    }
+  }
+
+  & .questionAndAnswer {
+    margin-top: 1rem;
+
+    & .question {
+      min-height: 3rem;
+      box-sizing: border-box;
+      padding: 1rem 1.3rem;
+      margin-bottom: 1rem;
+      background-color: $tertiary-12;
+      font-family: "Mulish";
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: $tertiary-14;
+    }
+
+    & .answers {
+      min-height: 3rem;
+      box-sizing: border-box;
+      background-color: $tertiary-12;
+      margin-bottom: 0.5rem;
+      cursor: default;
+
+      & .MuiTouchRipple-child {
+        background-color: none;
+      }
+
+      & .optionWrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .option {
+          display: flex;
+          gap: 0.3rem;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0 0.7rem;
+
+          & p {
+            font-family: "Mulish";
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: $tertiary-14;
+          }
+
+          & .containerOptionsImage {
+            display: flex;
+
+            & div {
+              display: flex;
+              gap: 0.5rem;
+
+              & .optionImage {
+                background-color: $tertiary-10;
+                margin: 0 0.3rem;
+                width: 3rem;
+                aspect-ratio: 1;
+                border-radius: 5px;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+
+        & .optionArgument {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          & svg {
+            color: $tertiary-10;
+          }
+
+          & p {
+            font-family: "Mulish";
+            font-size: 0.75em;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    & .right {
+      background-color: $quinary-1;
+
+      & .optionWrapper {
+        & .option {
+          & p {
+            color: $tertiary-10;
+          }
+        }
+
+        & .optionArgument {
+          & p {
+            color: $tertiary-10;
+          }
+        }
+      }
+    }
+
+    & .wrong {
+      background-color: $quaternary-1;
+
+      & .optionWrapper {
+        & .option {
+          & p {
+            color: $tertiary-10;
+          }
+        }
+
+        & .optionArgument {
+          & p {
+            color: $tertiary-10;
+          }
+        }
+      }
+    }
+
+    & .answer:active {
+      background-color: $primary-8;
+    }
+  }
+
+  & .btnGroup {
+    margin-top: 2rem;
+
+    & button {
+      font-family: "Mulish";
+      font-size: 0.625rem;
+      font-weight: 700;
+      width: 7rem;
+    }
+
+    & .leftBtn {
+      border: 1px solid $primary-8;
+      background-color: $tertiary-12;
+      color: $primary-8;
+    }
+
+    & .rightBtn {
+      background-color: $primary-8;
+      color: $tertiary-10;
+    }
+  }
+
+  & .question__navigation {
+    background-color: $tertiary-8;
+    border-radius: 5px;
+    padding: 1em;
+
+    & .btn__flag {
+      font-size: 15px;
+      font-weight: 400;
+      color: $quaternary-2;
+
+      & svg {
+        fill: $quaternary-2;
+      }
+    }
+
+    & .containerButtonNavigation {
+      margin: 1em 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    }
+
+    & .btn__submit {
+      font-family: "Poppins";
+      font-size: 12px;
+      font-weight: 700;
+      background-color: $primary-2;
+      color: $tertiary-10;
+    }
+
+    & .MuiButton-root.Mui-disabled {
+      background-color: #e0e0e0 !important;
+    }
+  }
+}

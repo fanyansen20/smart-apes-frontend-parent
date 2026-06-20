@@ -1,0 +1,74 @@
+@import "../../../../../styles/theme/light-v2";
+
+.borderContainer {
+  border-width: 1px;
+  border-color: $grey-200 !important;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.containerChildrenCalendar {
+  background-color: $text-0;
+  padding-bottom: 20px;
+
+  & .title {
+    margin-bottom: 10px;
+    margin-top: 1rem;
+
+    & p {
+      font-weight: 700;
+    }
+  }
+
+  & .currentDateTitle {
+    color: $brand-500;
+  }
+
+  & .cardContainer {
+    @extend .borderContainer;
+
+    display: flex;
+    flex-direction: row;
+    background-color: $text-0;
+    gap: 0.3rem;
+    align-items: center;
+    padding: 1em;
+
+    & .card {
+      padding: 0.5rem 0.5rem 0.5rem 0;
+      cursor: pointer;
+
+      & .cardContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .cardTextContainer {
+          flex-direction: column;
+
+          & h5 {
+            font-size: 12px;
+            font-weight: 500;
+            color: $text-300;
+          }
+
+          & h3 {
+            font-size: 14px;
+            font-weight: 700;
+            color: $text-500;
+            margin-bottom: 0.3rem;
+          }
+
+          & .cardContentLeft {
+            ::before {
+              content: " ";
+              border: 2.5px solid $brand-500;
+              border-radius: 10px;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

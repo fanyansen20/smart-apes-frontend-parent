@@ -1,0 +1,34 @@
+.container-sidebar {
+  background-color: $tertiary-10;
+  padding: 1em;
+  border-radius: 5px;
+  min-height: 450px;
+
+  & .profile_sidebar_parent {
+    margin: 1em 0;
+    font-size: 8px;
+    font-weight: 500;
+    color: $tertiary-16;
+  }
+
+  & .profile_sidebar_child {
+    margin-bottom: 2em;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    & .profile_sidebar_child_item {
+      font-size: 14px;
+      font-weight: 600;
+      color: $tertiary-6;
+      cursor: pointer;
+    }
+
+    & .profile_sidebar_child_item__active {
+      font-size: 14px;
+      font-weight: 600;
+      color: $tertiary-14;
+    }
+  }
+}

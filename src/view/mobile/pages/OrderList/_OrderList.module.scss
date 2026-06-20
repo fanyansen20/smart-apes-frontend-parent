@@ -1,0 +1,449 @@
+// Color Style Sheet
+@import "../../../../../src/styles/theme/light-v2";
+
+.TabPanel {
+  padding: 0px;
+}
+
+.content {
+  margin-top: 20px;
+  & .title {
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      color: $text-500;
+    }
+  }
+
+  & .filterProducts {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    & .filterButton {
+      font-weight: 700;
+      color: $brand-500;
+      background-color: $brand-0;
+      border-color: $brand-500;
+      text-transform: none;
+      border-radius: 5px;
+      &:hover {
+        border-color: $brand-500;
+      }
+    }
+  }
+}
+
+.container {
+  padding-bottom: 100px;
+  background-color: $text-0;
+  border-radius: 5px;
+  & .categoryTab {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    width: 100%;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+      display: none;
+    }
+    & .activeCategory {
+      background-color: $brand-500 !important;
+      color: $text-0 !important;
+      border-radius: 5px;
+    }
+    & .categoryButton {
+      flex: 0 0 auto;
+      box-sizing: border-box;
+      text-wrap: nowrap;
+      background-color: $text-0;
+      border: 1px solid $brand-500;
+      color: $brand-500;
+      padding: 5px 22px;
+      // Button Text
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+
+  & .cardElevation {
+    border: 1px solid $text-0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  & .cardContainer {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid $grey-200;
+    & .cardHeader {
+      display: flex;
+      justify-content: space-between;
+      p {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: $text-500;
+        font-size: 14px;
+        & .cardId {
+          color: $brand-500;
+          font-weight: 500;
+          font-size: 12px;
+        }
+        & .cardDate {
+          color: $text-900;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+      & .cardHeaderRight {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+    }
+    & .cardHeaderDivider {
+      padding-bottom: 10px;
+      border-bottom: 1px solid $text-0;
+    }
+    & .noteInfo {
+      margin-top: 20px;
+      padding: 12px 17px;
+      background-color: $text-0;
+
+      & .noteMsg {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        & .ninjaVanText {
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+
+    .cardNotification {
+      background-color: $warning-50;
+      border: 1px solid $warning-500;
+      border-radius: 10px;
+      padding: 8px 8px;
+      gap: 5px;
+    }
+
+    & .cardBody {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 10px;
+      gap: 10px;
+      & .titleContent {
+        font-weight: 600;
+        font-size: 12px;
+      }
+      & .bodyContent {
+        margin-top: 5px;
+        font-weight: 600;
+        font-size: 12px;
+        color: $text-300;
+        word-wrap: break-word;
+      }
+      & .detailText {
+        color: $text-300;
+        font-weight: 700;
+        font-size: 12px;
+      }
+
+      // & .productSectionDivider {
+      //   border-right: 1px solid #f0f0f0;
+      // }
+
+      & .productSection {
+        display: flex;
+        flex-direction: row;
+
+        & .imageThumbnail {
+          width: 100px;
+          height: 100px;
+          border: 1px solid $text-100;
+          & img {
+            object-fit: contain;
+            width: 100px;
+            height: 100%;
+            border-radius: 3.5px;
+          }
+        }
+        & .imageThumbnailSubOrder {
+          width: 90px !important;
+          height: 90px !important;
+          & img {
+            width: 90px !important;
+          }
+        }
+        & .titleProduct {
+          // width: 259px;
+          font-weight: 700;
+          font-size: 12px;
+          text-wrap: balance;
+        }
+        & .titleSplittedProduct {
+          font-size: 13px !important;
+          font-style: normal;
+          line-height: normal !important;
+          color: $text-500 !important;
+        }
+        & .priceProduct {
+          padding: 5px 0 4px 0;
+          font-weight: 500;
+          font-size: 12px;
+          color: $text-300;
+        }
+        & .priceSplittedProduct {
+          color: $text-500 !important;
+        }
+        & .noteProduct {
+          font-weight: 500;
+          font-size: 12px;
+          color: $text-300;
+        }
+      }
+
+      & .addressSection {
+        width: 150px;
+        margin-left: 25px;
+      }
+
+      & .deliverySection {
+        margin-left: 30px;
+        width: 141px;
+      }
+
+      & .bookingCodeSection {
+        margin-left: 30px;
+      }
+
+      & .grandTotalSection {
+        & .contentGrandTotal {
+          display: flex;
+          align-items: center;
+          font-weight: 700;
+          font-size: 20px;
+          color: $text-300;
+
+          & .iconCustom {
+            color: $text-200;
+            width: 12.5px;
+            margin-left: 6.25px;
+          }
+        }
+      }
+    }
+
+    .grandTotalSection {
+      .titleContent {
+        font-weight: 600;
+        font-size: 12px;
+      }
+      .contentGrandTotal {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: $text-300;
+
+        .iconCustom {
+          color: $text-200;
+          width: 12.5px;
+          margin-left: 6.25px;
+        }
+      }
+    }
+
+    & .splitedOrderContainer {
+      & .grandTotalSection {
+        & .contentGrandTotal {
+          display: flex;
+          align-items: center;
+          font-weight: 700;
+          font-size: 20px;
+          color: $text-300;
+
+          & .iconCustom {
+            color: #cccccc;
+            width: 12.5px;
+            margin-left: 6.25px;
+          }
+        }
+      }
+    }
+
+    & .cardBodyBundle {
+      @extend .cardBody;
+      flex-direction: row;
+    }
+
+    & .footerCard {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 8px;
+      gap: 4px;
+      & .buttonPayNow {
+        flex: 0 0 auto;
+        box-sizing: border-box;
+        text-wrap: nowrap;
+        background-color: $brand-500;
+        border-radius: 5px;
+        min-width: 150px;
+        height: 30px;
+        color: $text-0;
+        p {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 16px;
+          text-transform: none;
+        }
+      }
+
+      & .buttonChatBuyer {
+        @extend .buttonPayNow;
+        color: $brand-500;
+        margin: 0 5px 0 5px;
+        background-color: $text-0;
+        border: 0.5px solid $brand-500;
+
+        &:disabled {
+          color: rgba(0, 0, 0, 0.26) !important;
+          border: 0.5px solid rgba(0, 0, 0, 0.26) !important;
+        }
+
+        p {
+          display: flex;
+          align-items: center;
+          & .iconCustom {
+            width: 12.5px;
+            margin-right: 11px;
+          }
+        }
+      }
+      & .buttonOption {
+        @extend .buttonChatBuyer;
+        cursor: pointer;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+      }
+
+      & .menuAction {
+        border: 1px solid #cfcfcf;
+        border-radius: 5px;
+
+        & ul {
+          width: 187px;
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+
+          & li {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            color: #475467;
+            padding: 9px 24px;
+          }
+        }
+      }
+    }
+  }
+
+  & .bottomCard {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      padding-top: 35px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #cccccc;
+    }
+    & .MuiPagination-root {
+      background-color: red;
+      // font-weight: 600;
+      // font-size: 16px;
+    }
+  }
+}
+.subStatusLabel {
+  border: 1px solid #f04438;
+  padding: 0px 7px;
+  align-items: center;
+  padding: 0 7px !important;
+  font-size: 0.68rem !important;
+
+  & .subStatusIcon {
+    margin-right: 5px !important;
+    padding: 4px 0 !important;
+    font-size: 16px !important;
+  }
+
+  & .subStatusMessage {
+    padding: 0 !important;
+  }
+}
+
+.totalPriceHeader {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+}
+
+.totalPriceItem {
+  font-family: "Poppins";
+  font-style: normal;
+  justify-content: space-between;
+
+  & .totalPriceLabel {
+    font-weight: 600;
+    color: $text-300;
+  }
+
+  & .totalPriceValue {
+    font-weight: 600;
+    color: $text-100;
+  }
+}
+
+.orderButtonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  & .buttonPrimary {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    text-wrap: nowrap;
+    background-color: $brand-500;
+    border-radius: 8px;
+    color: $text-0;
+    padding: 10px;
+  }
+  & .buttonPrimaryOutlined {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    text-wrap: nowrap;
+    border: 1px solid $brand-500;
+    border-radius: 8px;
+    color: $brand-500;
+    padding: 10px;
+  }
+}
+
+.multipleShopContainer {
+  .cardDate {
+    color: $text-900;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

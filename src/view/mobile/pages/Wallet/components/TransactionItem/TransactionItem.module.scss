@@ -1,0 +1,63 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.transactionItem {
+  margin: 8px 0;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  & hr {
+    margin: 12px 0;
+    border: none;
+    border-bottom: 1px solid $grey-200;
+  }
+
+  & .transaction {
+    font-size: 14px;
+    font-weight: 600;
+    color: $text-500;
+  }
+
+  & .date {
+    font-size: 12px;
+    font-weight: 500;
+    color: $sec-text-500;
+  }
+
+  & .status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: $text-500;
+    background-color: $grey-100;
+  }
+
+  & .status__COMPLETED {
+    @extend .status;
+    color: $success-400;
+    background-color: $success-100;
+  }
+
+  & .status__PENDING {
+    @extend .status;
+    color: $warning-300;
+    background-color: $warning-100;
+  }
+
+  & .status__FAILED {
+    @extend .status;
+    color: $error-400;
+    background-color: $error-100;
+  }
+}
+
+.transactionItem:last-of-type {
+  & hr {
+    visibility: hidden;
+  }
+}

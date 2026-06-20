@@ -1,0 +1,19 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.summaryTitleSection {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .backgroundContainer {
+    background: url("../../../../../../assets/images/ChildrenDashboard/summary-test/background-summary-sub-title.svg")
+      no-repeat center;
+    background-size: cover;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+
+  & .sectionTitle {
+    font-weight: 700;
+  }
+}

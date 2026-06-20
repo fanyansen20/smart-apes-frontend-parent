@@ -1,0 +1,28 @@
+@import "../../../../../../../../../styles/theme/light-v2";
+
+.personalityCard {
+  border-radius: 0.5rem;
+  border: 1px solid $grey-50;
+  text-align: justify;
+  padding: 1rem 0;
+
+  & img {
+    width: 100%;
+  }
+
+  & p {
+    padding-right: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+.personalityText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & p {
+    text-align: justify;
+    line-height: 1.5rem;
+  }
+}

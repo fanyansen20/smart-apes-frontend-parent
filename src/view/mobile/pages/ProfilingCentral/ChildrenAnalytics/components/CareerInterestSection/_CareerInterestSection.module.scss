@@ -1,0 +1,16 @@
+@import "../../ChildrenAnalytics.module";
+@import "../../../../../../../styles/theme/light-v2";
+
+.containerCodesSummary {
+  display: grid;
+  grid-template-columns: repeat(2, calc(90vw / 2));
+  gap: 10px;
+
+  & .rightCode {
+    padding-left: 1.8rem;
+  }
+}
+
+b {
+  font-weight: 700;
+}

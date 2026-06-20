@@ -1,0 +1,19 @@
+@use "../../../../../../../styles/breakpoints";
+@import "../../../../../../../styles/theme/light-v2";
+
+.textModal {
+  @include breakpoints.media(xs) {
+    color: $text-500;
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  @include breakpoints.media(md) {
+    color: $sec-text-500;
+    font-size: 16px;
+  }
+
+  & b {
+    font-weight: 700;
+  }
+}

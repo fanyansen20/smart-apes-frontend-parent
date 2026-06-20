@@ -1,0 +1,18 @@
+.paper-dropdown-menu-order {
+  border-radius: 6px !important;
+}
+
+.dropdown-menu-list-order {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  & .MuiListItem-root {
+    &:focus-visible {
+      outline: none;
+    }
+
+    & .MuiListItemButton-root {
+      padding: 16px 20px !important;
+    }
+  }
+}

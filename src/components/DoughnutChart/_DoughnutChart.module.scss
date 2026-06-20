@@ -1,0 +1,19 @@
+@use "../../styles/breakpoints";
+@import "../../styles/theme/light-v2";
+
+.containerDoughnutChart {
+  display: flex;
+  justify-content: center;
+
+  & .doughnutChart {
+    @include breakpoints.media(xs) {
+      width: 80% !important;
+      height: 80% !important;
+    }
+
+    @include breakpoints.media(md) {
+      width: 700px !important;
+      height: 700px !important;
+    }
+  }
+}

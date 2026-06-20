@@ -1,0 +1,32 @@
+@import "../../../../../../../styles/theme/light-v2";
+
+.textContent {
+  font-size: 1.125rem;
+
+  // no color palette
+  color: #767b99;
+}
+
+.careerInterestType {
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: $text-500;
+
+  & b {
+    font-weight: 700;
+  }
+}
+
+.headerSummary {
+  color: $brand-500;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.descriptionSummary {
+  text-align: justify;
+  color: $text-500;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}

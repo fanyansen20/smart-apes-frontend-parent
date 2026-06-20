@@ -1,0 +1,118 @@
+@import "../../../../styles/theme/light-v2";
+
+.content {
+  padding: 1rem 0;
+  background-color: $text-0;
+}
+
+.formControl {
+  margin-bottom: 1rem;
+
+  & p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    color: $text-500;
+  }
+
+  & input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  & .datePicker {
+    min-width: 100% !important;
+
+    & input {
+      padding: 8.5px 1em;
+    }
+  }
+
+  & .errorText {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 700;
+    color: $error-500;
+    margin-top: 0.5rem;
+    padding-left: 0.75rem;
+  }
+}
+
+.avatarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageSize {
+  min-width: 97px;
+  min-height: 97px;
+  max-width: 97px;
+  max-height: 97px;
+  border-radius: 97px;
+  object-fit: cover;
+}
+
+.avatar {
+  @extend .imageSize;
+
+  position: relative;
+  display: flex;
+  background-color: $grey-0;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagePreview {
+  @extend .imageSize;
+
+  background-size: cover;
+}
+
+.profileIcon {
+  width: 60px;
+  height: 60px;
+}
+
+.uploadIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.MuiButton-root.Mui-disabled {
+  background-color: $text-200 !important;
+}
+
+.submitButton {
+  margin-top: 1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid $brand-500;
+}
+
+.removeButton {
+  @extend .button;
+
+  border-color: $error-500;
+  justify-content: flex-start;
+}
+
+.buttonTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: $text-500;
+  margin-left: 0.5rem;
+}
+
+.redButtonTitle {
+  @extend .buttonTitle;
+
+  color: $error-500;
+}

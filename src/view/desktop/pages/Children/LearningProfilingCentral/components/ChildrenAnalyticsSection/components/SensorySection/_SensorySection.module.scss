@@ -1,0 +1,11 @@
+@import "../TypologySection/TypologySection.module";
+
+.doughnutChart {
+  width: 100% !important;
+}
+
+.summaryDescription {
+  color: $text-500;
+  text-align: justify;
+  line-height: 1.5rem;
+}

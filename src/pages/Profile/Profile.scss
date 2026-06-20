@@ -1,0 +1,223 @@
+.container-profile-content {
+  %button-base {
+    margin-top: 1em;
+    border-radius: 5px !important;
+    background-color: $primary-8;
+    color: $tertiary-10;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  padding: 1em;
+  background-color: $tertiary-10;
+  border-radius: 5px;
+  margin-bottom: 3em;
+  min-height: 450px;
+
+  & .content-not-address {
+    @extend .title;
+    @extend .subTitle;
+    text-align: center;
+
+    & .title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    & .subTitle {
+      color: $tertiary-6;
+      margin: 0 auto;
+      width: 60%;
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+
+  & .btn-group-address-header {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: flex-end;
+    gap: 0.3em;
+
+    & button {
+      @extend %button-base;
+      font-size: 10px;
+    }
+
+    & .btn-set-primary {
+      background-color: #bba2ffb2;
+      color: $primary-8;
+      border: 1px solid $primary-8;
+    }
+  }
+
+  & .btn-group {
+    display: flex;
+    gap: 0.3em;
+    justify-content: flex-end;
+
+    & button {
+      @extend %button-base;
+    }
+  }
+
+  & .Mui-disabled {
+    background-color: $tertiary-5 !important;
+  }
+
+  & .subTitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: $tertiary-16;
+  }
+
+  & .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: $tertiary-14;
+    margin-bottom: 1em;
+  }
+
+  & .container-profile-info-left {
+    border: 1px solid $tertiary-9;
+    border-radius: 5px;
+    min-height: 200px;
+    padding: 1em;
+
+    & .profile-btn-primary {
+      @extend %button-base;
+    }
+
+    & .profile-upload-info {
+      margin-top: 1em;
+      color: $tertiary-6;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  & .container-profile-info-right {
+    & .profile-btn-primary {
+      @extend %button-base;
+    }
+
+    & .labelSelect {
+      font-size: 12px;
+      font-weight: 600;
+      color: $tertiary-13;
+      margin-bottom: 7px;
+    }
+
+    & .selectSearch {
+      & .MuiInputBase-input.MuiOutlinedInput-input {
+        font-size: 12px;
+      }
+    }
+
+    padding-left: 2em;
+  }
+
+  & .container-profile-info-avatar {
+    background-color: $tertiary-8;
+    border-radius: 5px;
+    gap: 1em;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    & .cancel-button {
+      position: absolute;
+      top: 0.3em;
+      right: 0.3em;
+      cursor: pointer;
+      color: $primary-8;
+    }
+
+    & .profile-info-avatar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+
+      & img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+      }
+
+      & .profile-avatar-icon {
+        color: $tertiary-6;
+        font-size: 70px;
+        border: 3px solid $tertiary-6;
+        border-radius: 50%;
+        padding: 15px;
+      }
+
+      & .profile-avatar-text {
+        font-size: 14px;
+        font-weight: 600;
+        color: $tertiary-16;
+      }
+    }
+
+    & .profile-btn-primary {
+      background-color: $primary-8;
+    }
+  }
+
+  & .address_card_container__active {
+    border: 1px solid $primary-8;
+  }
+
+  & .address_card_container {
+    background-color: $tertiary-7;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+
+    & .btn_location {
+      @extend %button-base;
+      margin-top: 0;
+      background-color: $senary-8;
+      min-width: 9em;
+      margin-right: 1em;
+    }
+
+    & .btn_address_primary {
+      @extend %button-base;
+      margin-top: 0;
+      background-color: $primary-8;
+      color: $tertiary-10;
+      min-width: 9em;
+    }
+
+    & .address_label {
+      font-size: 12px;
+      font-weight: 400;
+      color: $tertiary-16;
+      margin-bottom: 0.5em;
+    }
+
+    & .address_values {
+      font-size: 12px;
+      font-weight: 600;
+      color: $tertiary-14;
+    }
+
+    & .btn_edit_address {
+      @extend %button-base;
+      margin-top: 0;
+      font-size: 10px;
+    }
+
+    & .btn_delete_address {
+      @extend %button-base;
+      background-color: $tertiary-7;
+      font-size: 10px;
+      color: $quaternary-1;
+    }
+  }
+}

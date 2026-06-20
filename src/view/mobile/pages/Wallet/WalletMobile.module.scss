@@ -1,0 +1,82 @@
+@import "../../../../styles/theme/light-v2";
+
+.containerWalletMobile {
+  background-color: $text-0;
+  margin-bottom: 50px;
+
+  & button {
+    padding: 8px 10px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  & .balance {
+    padding: 3rem 1rem;
+    border-radius: 8px;
+    border: 1px solid $text-50;
+    background-image: url("../../../../assets/images/illustration-transcation-success.svg");
+    background-repeat: no-repeat;
+    background-position: right -10px bottom -20px;
+
+    & h3 {
+      font-size: 30px;
+      font-weight: 600;
+      color: $text-500;
+    }
+  }
+
+  & .transactionHistoryHeader {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    & h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: $text-500;
+    }
+
+    & h5 {
+      font-size: 12px;
+      font-weight: 400;
+      color: $sec-text-500;
+    }
+
+    & input {
+      height: 24px;
+      font-size: 12px;
+      border: none;
+    }
+
+    & fieldset {
+      border-radius: 8px;
+    }
+
+    & .filterBtn {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  & .noTransaction {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    & p {
+      font-size: 14px;
+      font-weight: 400;
+      color: $sec-text-500;
+    }
+  }
+
+  & .skeleton {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

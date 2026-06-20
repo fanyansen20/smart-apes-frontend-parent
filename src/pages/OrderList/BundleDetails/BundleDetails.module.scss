@@ -1,0 +1,29 @@
+.productItemCard {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #e9edf5;
+
+  & .imageThumbnail {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #e9edf5;
+    border-radius: 5px;
+    & img {
+      object-fit: contain;
+      width: 80px;
+      height: 100%;
+      border-radius: 3.5px;
+    }
+  }
+
+  & .productTitle {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  & .productQty {
+    color: #adadad;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

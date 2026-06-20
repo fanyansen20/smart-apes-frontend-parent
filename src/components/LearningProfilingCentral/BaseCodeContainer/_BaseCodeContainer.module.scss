@@ -1,0 +1,82 @@
+@use "../../../styles/breakpoints";
+@import "../../../styles/theme/light-v2";
+
+.container {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  border: 1px $brand-500 solid;
+  border-radius: 0.5rem;
+
+  @include breakpoints.media(xs) {
+    padding: 1.5rem 0 1rem 0;
+  }
+
+  @include breakpoints.media(md) {
+    padding: 2.5rem 0 1rem 0;
+  }
+
+  & .baseCodeTitle {
+    color: $text-0;
+    position: absolute;
+    font-weight: 600;
+
+    @include breakpoints.media(xs) {
+      top: -0.5rem;
+      margin: 0;
+    }
+
+    @include breakpoints.media(md) {
+      top: -0.8rem;
+      margin: 0;
+    }
+  }
+
+  & .img {
+    position: absolute;
+    top: -1.8rem;
+    width: 90%;
+  }
+
+  & .codeList {
+    display: grid;
+    text-transform: capitalize;
+
+    @include breakpoints.media(xs) {
+      gap: 5px;
+      grid-template-columns: repeat(3, 100px);
+    }
+
+    @include breakpoints.media(md) {
+      gap: 15px;
+      grid-template-columns: repeat(3, 200px);
+    }
+  }
+
+  & p {
+    color: $text-500;
+
+    @include breakpoints.media(xs) {
+      font-size: 10px;
+      margin-left: 1rem;
+    }
+
+    @include breakpoints.media(md) {
+      font-size: 18px;
+      margin-left: 2.5rem;
+    }
+  }
+
+  & .checkedIcon {
+    @include breakpoints.media(xs) {
+      width: 10px;
+      height: 10px;
+      margin-right: 0.5rem;
+    }
+
+    @include breakpoints.media(md) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

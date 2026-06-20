@@ -1,0 +1,36 @@
+@import "../../../../../styles/theme/light-v2";
+
+.container {
+  padding: 0 0 1rem 0;
+  background-color: $text-0;
+
+  & .title {
+    font-weight: 700;
+  }
+
+  & .listContainer {
+    overflow-y: auto;
+    max-height: calc(100vh - 186px - 40px);
+    /* Firefox */
+    max-height: -moz-calc(100vh - 186px - 40px);
+    /* WebKit */
+    max-height: -webkit-calc(100vh - 186px - 40px);
+    /* Opera */
+    max-height: -o-calc(100vh - 186px - 40px);
+  }
+}
+
+.emptyContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: -1rem;
+  padding: 0 1rem;
+}
+
+.buttonContainer {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+}

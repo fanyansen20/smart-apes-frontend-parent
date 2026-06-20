@@ -1,0 +1,47 @@
+.children-container {
+  margin-right: 1em;
+  width: 270x;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  background-color: $tertiary-10;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+
+  & .children-picture {
+    background-color: $tertiary-8;
+    box-shadow: 0px 2px 4px 0px #0000001a;
+    width: 100%;
+    max-width: 360px;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  & .children-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $tertiary-14;
+  }
+
+  & .btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+
+    & .btn-details {
+      background-color: $primary-8;
+      color: $tertiary-10;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+
+    & .btn-assessment {
+      border: 1px solid $primary-8;
+      color: $primary-8;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../../../styles/theme/light-v2";
+
+.sectionHeaderContainer {
+  border-radius: 4px 4px 4px 22px;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  & .sectionTitle {
+    color: $text-0;
+    font-weight: 700;
+  }
+
+  & .numberContainer {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-color: $text-0;
+    border-radius: 4px 44px 44px 44px;
+
+    & p {
+      font-weight: 700;
+    }
+  }
+}
+
+.bg__orange {
+  background-color: #fe9601;
+}
+
+.__orange {
+  // no token palette
+  border: 4px #ffbd5f solid;
+  color: #fe9601;
+}
+
+.bg__pink {
+  background-color: #fa2a83;
+}
+
+.__pink {
+  // no token palette
+  border: 4px #ff87ba solid;
+  color: #fa2a83;
+}
+
+.bg__green {
+  background-color: #28ba6b;
+}
+
+.__green {
+  // no token palette
+  border: 4px #93e8ba solid;
+  color: #28ba6b;
+}
+
+.bg__blue {
+  background-color: #1c7fdd;
+}
+
+.__blue {
+  // no token palette
+  border: 4px #67b5ff solid;
+  color: #1c7fdd;
+}
+
+.bg__purple {
+  background-color: $brand-500;
+}
+
+.__purple {
+  // no token palette
+  border: 4px $brand-100 solid;
+  color: $brand-500;
+}
+
+// desktop view
+.desktopView {
+  @extend .sectionHeaderContainer;
+  border-radius: 4px 4px 4px 40px;
+  gap: 0.625rem;
+
+  & .numberContainer {
+    border-radius: 0px 80px 80px 80px;
+    width: 74px;
+    height: 74px;
+
+    & p {
+      font-size: 2.25rem;
+    }
+  }
+
+  & .sectionTitle {
+    font-size: 1.5rem;
+  }
+}

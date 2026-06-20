@@ -1,0 +1,81 @@
+@use "../../../styles/breakpoints";
+@import "../../../styles/palette";
+
+.modal {
+  @include breakpoints.media(xs) {
+    width: 360px;
+  }
+  @include breakpoints.media(md) {
+    width: 515px;
+  }
+
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $tertiary-10;
+  border-radius: 10px;
+  padding: 1.5em 1.5em;
+
+  & .modalTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: $tertiary-14;
+    margin-bottom: 1rem;
+  }
+
+  & .testItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    padding: 1rem 1.3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    & .testTitle {
+      & h3 {
+        font-family: "Poppins";
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: $tertiary-14;
+        margin-bottom: 0.5rem;
+      }
+
+      & h5 {
+        font-family: "Poppins";
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: $tertiary-6;
+      }
+    }
+
+    & svg {
+      color: $quinary-1;
+    }
+  }
+
+  & .btnGroup {
+    & button {
+      font-family: "Poppins";
+      font-size: 0.625rem;
+      font-weight: 700;
+    }
+
+    & .btnSubmit {
+      background-color: $primary-8;
+      color: $tertiary-10;
+      margin-bottom: 0.3rem;
+    }
+
+    & .btnCancel {
+      color: $primary-8;
+    }
+  }
+}
+
+.modal:focus {
+  outline: none !important;
+}

@@ -1,0 +1,81 @@
+.containerEnrolledClass {
+  background-color: $tertiary-10;
+  border-radius: 5px;
+  padding: 1em;
+
+  & .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $tertiary-8;
+    margin-bottom: 0.5rem;
+
+    & h3 {
+      font-family: "Mulish";
+      font-size: 1rem;
+      font-weight: 700;
+      color: $tertiary-14;
+    }
+
+    & h5 {
+      font-family: "Mulish";
+      font-size: 0.625rem;
+      font-weight: 400;
+      color: $tertiary-16;
+      cursor: pointer;
+    }
+  }
+
+  & .class-card {
+    margin-bottom: 1px solid $tertiary-7;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    cursor: pointer;
+
+    & .class-card_content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .class-card_content_left {
+        font-family: "Mulish";
+
+        & h3 {
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: $tertiary-14;
+          margin-bottom: 0.3rem;
+        }
+
+        & h5 {
+          font-size: 0.7rem;
+          font-weight: 600;
+          color: $tertiary-16;
+        }
+
+        ::before {
+          content: " ";
+          border: 2.5px solid $primary-7;
+          border-radius: 10px;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  & .noClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & p {
+      font-family: "Mulish";
+      font-size: 1rem;
+      font-weight: 700;
+      color: $tertiary-14;
+    }
+  }
+}

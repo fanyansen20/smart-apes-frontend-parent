@@ -1,0 +1,38 @@
+@import "../../../../styles/theme/light-v2";
+
+.learningProfileContent {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  color: $text-0;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 18px 0;
+
+  background: $text-0
+    url("../../../../assets/images/ChildrenDashboard/illustration-learningprofile.svg")
+    no-repeat center;
+  background-size: cover;
+
+  & h4 {
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+  & p {
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+
+  & .btnProfileCentral {
+    font-size: 12px;
+    padding: 9.5px 24px;
+    font-weight: 700;
+    color: #c16639;
+    background-color: #ffe388;
+  }
+}

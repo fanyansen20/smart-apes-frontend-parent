@@ -1,0 +1,48 @@
+@import "../../../../styles/theme/light-v2";
+
+.container {
+  padding-top: 1rem;
+  color: $text-0;
+
+  & .loadingContainer {
+    min-height: calc(100vh - 156px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & .title {
+      font-weight: 700;
+      color: $text-500;
+    }
+
+    & .subtitle {
+      font-size: 14px;
+      color: $sec-text-500;
+    }
+  }
+
+  & .summaryHeaderContainer {
+    padding: 0rem 2rem;
+
+    & .backgroundCover {
+      background: url("../../../../assets/images/ChildrenDashboard/summary-test/background-summary-title.svg")
+        no-repeat center;
+      background-size: cover;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    & .summaryTitle {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    & .summarySubtitle {
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+}

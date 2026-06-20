@@ -1,0 +1,223 @@
+.container_dashboard_orders {
+  background-color: $tertiary-10;
+  padding: 0.5em 1em 1em 1em;
+  border-radius: 5px;
+
+  th {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 14px;
+    color: $tertiary-14;
+  }
+
+  & .dashboard_order_table_list {
+    & .dashboard_order_gap {
+      height: 12px;
+    }
+
+    td:first-child {
+      border-left-style: solid;
+      border-radius: 5px 0 0 5px;
+      font-weight: 500;
+      font-size: 12px;
+      color: $tertiary-5;
+    }
+
+    // td:nth-child(4) {
+    //   font-weight: 600;
+    //   font-size: 13px;
+    //   color: $tertiary-14;
+    // }
+
+    td:last-child {
+      border-right-style: solid;
+      border-radius: 0 5px 5px 0;
+    }
+
+    & tr {
+      padding: 5px;
+      background-color: $tertiary-19;
+    }
+
+    & td {
+      padding: 7px 0;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  & .dashboard_order_picture {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 5px;
+    object-fit: contain;
+  }
+
+  & .dashboard_order_item {
+    font-weight: 600;
+    font-size: 12px;
+    color: $tertiary-14;
+    margin-bottom: 10px;
+  }
+
+  & .dashboard_order_item_price {
+    font-weight: 600;
+    font-size: 12px;
+    color: $tertiary-5;
+  }
+
+  & .dashboard_order_item_qty {
+    font-weight: 600;
+    font-size: 12px;
+    color: $primary-8;
+  }
+
+  & .dashboard_order_row {
+    cursor: pointer;
+  }
+
+  & .dashboard_order_status_ondelivery {
+    width: 50%;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: $primary-4;
+    padding: 1em;
+    color: $tertiary-10;
+  }
+
+  & .dashboard_order_status_delivered {
+    width: 50%;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: $quinary-4;
+    padding: 1em;
+    color: $tertiary-10;
+  }
+
+  & .dashboard_order_status_canceled {
+    width: 50%;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: $quaternary-4;
+    padding: 1em;
+    color: $tertiary-10;
+  }
+
+  & .dashboard_btn_detail_order {
+    font-weight: 700;
+    font-size: 10px;
+    color: $primary-8;
+    border: 1px solid $primary-8;
+  }
+
+  & .dashboard_tracking_row {
+    line-height: 20px;
+    background-color: $tertiary-10 !important;
+
+    & .dashboard_tracking_time {
+      text-align: right !important;
+
+      & p {
+        padding-right: 1em;
+        font-weight: 500;
+        font-size: 12px;
+        color: $tertiary-14;
+      }
+    }
+
+    & .dashboard_tracking_status {
+      text-align: left !important;
+      border-left: 1px solid $primary-4;
+      position: relative;
+
+      & p {
+        font-weight: 500;
+        font-size: 12px;
+        color: $tertiary-14;
+      }
+
+      & p:before {
+        content: "\A";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: $primary-8;
+        display: inline-block;
+        margin-right: 1em;
+        margin-left: -0.5em;
+      }
+    }
+
+    & .dashboard_tracking_status__last {
+      text-align: left !important;
+      border-left: 1px solid transparent;
+      position: relative;
+
+      & p {
+        font-weight: 500;
+        font-size: 12px;
+        color: $tertiary-14;
+      }
+
+      & p:before {
+        position: relative;
+        content: "\A";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: $primary-8;
+        display: inline-block;
+        margin-right: 1em;
+        margin-left: -0.5em;
+      }
+    }
+
+    & .dashboard_tracking_status__last:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: -1px;
+      height: 50%;
+      border-left: 1px solid $primary-4;
+      z-index: 0;
+    }
+  }
+}
+
+.dashboardNoChild {
+  background-color: $text-0;
+  box-shadow: 0px 2px 4px 0px #0000001a;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+
+  & h3 {
+    margin: 0.7rem 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: $text-500;
+  }
+
+  & h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: $sec-text-500;
+    margin-bottom: 1rem;
+  }
+
+  & button {
+    margin: 1rem 0;
+    background-color: $brand-500;
+    font-size: 10px;
+    font-weight: 700;
+    color: $text-0;
+    padding: 0.3rem 1rem;
+  }
+}

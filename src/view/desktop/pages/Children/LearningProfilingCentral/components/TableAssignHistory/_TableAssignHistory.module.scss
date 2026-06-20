@@ -1,0 +1,49 @@
+@import "../../../../../../../styles/theme/light-v2";
+
+.container {
+  table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid $grey-50;
+  }
+
+  th {
+    font-weight: 700;
+    color: $brand-500;
+    background-color: $grey-0;
+  }
+
+  td {
+    color: $text-500;
+    font-weight: 600;
+  }
+
+  & .status__Pending {
+    color: $warning-500;
+  }
+
+  & .status__Complete {
+    color: $success-500;
+  }
+
+  & .containerPagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 1.5rem;
+
+    & p {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: $text-200;
+    }
+  }
+}

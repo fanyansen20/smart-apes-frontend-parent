@@ -1,0 +1,28 @@
+@import "../../../../../../../styles/theme/light-v2";
+
+.containerChildrenAnalytics {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  position: relative;
+  background-color: $text-0;
+  padding: 1.5rem;
+
+  & h6 {
+    color: $text-500;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  & .headerAnalytics {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & p {
+      color: $sec-text-300;
+      font-weight: 600;
+    }
+  }
+}

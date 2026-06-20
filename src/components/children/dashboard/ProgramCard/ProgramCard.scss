@@ -1,0 +1,174 @@
+@import "../../../../styles/palette";
+
+.containerProgram {
+  background-color: $tertiary-10;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1rem;
+
+  & .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $tertiary-8;
+    margin-bottom: 0.5rem;
+
+    & h3 {
+      font-family: "Mulish";
+      font-size: 1rem;
+      font-weight: 700;
+      color: $tertiary-14;
+    }
+
+    & h5 {
+      font-family: "Mulish";
+      font-size: 0.625rem;
+      font-weight: 400;
+      color: $tertiary-16;
+      cursor: pointer;
+    }
+  }
+
+  & .program-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $tertiary-17;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+
+    & .program-details {
+      display: flex;
+      gap: 1rem;
+      font-family: "Mulish";
+
+      & img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 5px;
+      }
+
+      & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      & h3 {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: $tertiary-14;
+        margin-bottom: 0.5rem;
+      }
+
+      & h5 {
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: $tertiary-6;
+      }
+    }
+  }
+
+  & .program-expand {
+    margin-left: 2.5rem;
+    border-left: 1px solid $primary-4;
+    padding-top: 0.5rem;
+
+    & .program-expand-item {
+      margin: 0 0 0.5rem 8px;
+      padding: 0.3rem;
+      border: 1px solid $tertiary-17;
+      border-radius: 5px;
+      display: flex;
+
+      & .program-expand-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+        & h3 {
+          font-size: 0.8rem;
+          font-weight: 700;
+          color: $tertiary-14;
+          margin-bottom: 0.5rem;
+        }
+
+        & h5 {
+          font-size: 0.65rem;
+          font-weight: 500;
+          color: $tertiary-6;
+        }
+      }
+
+      & img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 5px;
+        margin-right: 1rem;
+      }
+
+      & .progress-course-container {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+
+        & .progress-course {
+          flex: 1 1 auto;
+          display: flex;
+          align-items: center;
+
+          & .progress-bar {
+            width: 100%;
+            border-radius: 5px;
+            height: 0.4rem;
+            background-color: $tertiary-17;
+
+            & .MuiLinearProgress-bar {
+              background-color: $primary-8;
+              border-radius: 0 5px 5px 0;
+            }
+          }
+
+          & p {
+            font-family: "Mulish";
+            font-size: 0.4rem;
+            font-weight: 700;
+            color: $tertiary-14;
+            min-width: 1.5rem;
+            text-align: right;
+          }
+        }
+      }
+
+      &::before {
+        content: " ";
+        position: relative;
+        top: 19px;
+        left: -18.3px;
+        width: 0.688rem;
+        height: 0.563rem;
+        border-radius: 50%;
+        background-color: $primary-8;
+      }
+    }
+  }
+
+  & .noClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & p {
+      font-family: "Mulish";
+      font-size: 1rem;
+      font-weight: 700;
+      color: $tertiary-14;
+    }
+  }
+}

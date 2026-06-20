@@ -1,0 +1,54 @@
+.content {
+  margin-top: 20px;
+
+  & .title {
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      color: #333333;
+    }
+  }
+
+  & .filterProducts {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    & .filterButton {
+      font-weight: 700;
+      color: #7e54f1;
+      background-color: #f1ecff;
+      border-color: #7e54f1;
+      text-transform: none;
+      border-radius: 5px;
+      &:hover {
+        border-color: #7e54f1;
+      }
+    }
+  }
+}
+
+.container {
+  padding-bottom: 100px;
+  margin-top: 14px;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-top: 17px;
+  background-color: #fff;
+  border-radius: 5px;
+
+  & .categoryTabContainer {
+    display: flex;
+    justify-content: space-around;
+
+    & .titleCategory {
+      font-size: 14px;
+      font-weight: 600;
+      color: #cccccc;
+      cursor: pointer;
+    }
+
+    & .category__active {
+      color: #333333;
+    }
+  }
+}

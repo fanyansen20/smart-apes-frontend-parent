@@ -1,0 +1,11 @@
+@import "../../../../../../../../../styles/theme/light-v2";
+
+.cardAnalytics {
+  padding: 1.5rem;
+  border: 1px solid $grey-50;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

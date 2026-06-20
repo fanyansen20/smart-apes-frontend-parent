@@ -1,0 +1,40 @@
+@import "../../ChildrenAnalytics.module";
+@import "../../../../../../../styles/theme/light-v2";
+
+.tableHeaderContainer {
+  background-color: $grey-50;
+  padding: 0.7rem;
+
+  & p {
+    color: $brand-500;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
+.tableContentContainer {
+  background-color: $grey-0;
+  padding: 0.5rem;
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .tableLeftContent {
+    @extend .row;
+
+    & p {
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+
+  .tableRightContent {
+    @extend .row;
+
+    & p {
+      font-size: 12px;
+    }
+  }
+}

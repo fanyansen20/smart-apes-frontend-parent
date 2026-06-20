@@ -1,0 +1,34 @@
+@use "../../../../../styles/breakpoints";
+
+.loginRegisterDiv {
+  margin-left: 10px;
+  @include breakpoints.media(xs) {
+    display: none;
+  }
+  @include breakpoints.media(md) {
+    display: flex;
+  }
+  & .buttonAuthNavBar {
+    & .imgAuthNavBarIcon {
+      display: flex;
+      position: relative;
+      width: 30px;
+      height: 40px;
+      margin-right: 9px;
+
+      & img {
+        width: 1.5rem;
+      }
+    }
+    & .titleButtonUp {
+      font-size: 8px;
+      font-weight: 500;
+      color: $tertiary-6;
+    }
+    & .titleButtonBottom {
+      font-size: 12px;
+      font-weight: 500;
+      color: $tertiary-4;
+    }
+  }
+}

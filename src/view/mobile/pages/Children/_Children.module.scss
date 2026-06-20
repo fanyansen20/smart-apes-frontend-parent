@@ -1,0 +1,25 @@
+@import "../../../../styles/theme/light-v2";
+@import "../Dashboard/Dashboard.module";
+
+.childrenBackgroundContainer {
+  background-color: $text-0;
+}
+
+.childrenHeaderContainer {
+  padding: 1em 0;
+  margin-bottom: 5px;
+
+  & p {
+    margin-left: 5px;
+  }
+}
+
+.title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 1rem;
+}
+
+.childrenListContainer {
+  margin-bottom: 5px;
+}

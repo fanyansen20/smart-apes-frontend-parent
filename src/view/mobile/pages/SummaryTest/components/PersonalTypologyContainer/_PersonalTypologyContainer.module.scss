@@ -1,0 +1,21 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.personalTypographyContainer {
+  background-color: $brand-300;
+  border-radius: 6px;
+  padding: 1rem;
+
+  & img {
+    width: 100%;
+  }
+
+  & .title {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  & .subtitle {
+    font-size: 10px;
+    text-align: justify;
+  }
+}

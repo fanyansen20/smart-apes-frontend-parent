@@ -1,0 +1,27 @@
+@use "../../styles/breakpoints";
+
+/* Navbar */
+.navigationWrapper {
+  @include breakpoints.media(xs) {
+    margin-top: 85px;
+  }
+  @include breakpoints.media(md) {
+    margin-top: 145px;
+  }
+}
+
+.logoOnlyNavbar {
+  @include breakpoints.media(xs) {
+    margin-top: 85px;
+  }
+  @include breakpoints.media(md) {
+    margin-top: 130px;
+  }
+}
+
+.navigationBar {
+  position: sticky;
+  width: 100%;
+  top: 0px;
+  z-index: 99;
+}

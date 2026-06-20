@@ -1,0 +1,96 @@
+@use "../../../../styles/breakpoints";
+
+.navBar {
+  max-height: 90px;
+  background-color: #fff;
+  box-shadow: none;
+  justify-content: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+  z-index: 999;
+  position: relative;
+
+  & .imageLogoBrand {
+    display: flex;
+    align-items: center;
+  }
+  // Desktop Start
+  & .desktopNav {
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 30px;
+    @include breakpoints.media(xs) {
+      display: none;
+    }
+    @include breakpoints.media(md) {
+      display: flex;
+    }
+    & .imgMenuIconNavbar {
+      position: relative;
+      width: 15px;
+      height: 12.5px;
+      margin-right: 10px;
+    }
+
+    & .categoryButton {
+      margin: 2rem 0;
+      color: $tertiary-22;
+      height: 35px;
+      & .categoryTitle {
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      & .imgMenuIconNavbar {
+        display: flex;
+      }
+    }
+  }
+}
+
+.logoOnly {
+  margin: 24px 0;
+}
+
+.drawerMenuCategory {
+  z-index: 1;
+
+  .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+    background-color: none;
+  }
+
+  & .MuiDrawer-root {
+    z-index: 1 !important;
+  }
+
+  .css-oqbj7d {
+    top: 132px;
+  }
+
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorTop {
+    top: 250px !important;
+    box-shadow: none;
+  }
+  .css-1nvnyqx-MuiPaper-root-MuiDrawer-paper {
+    top: 132px !important;
+
+    box-shadow: none;
+  }
+}
+
+//!==================================================================================================================================================================================================================================================================================================================================
+//? Mobile Start
+.mobileNav {
+  flex-grow: 1;
+  @include breakpoints.media(xs) {
+    display: flex;
+  }
+  @include breakpoints.media(md) {
+    display: none;
+  }
+}
+
+.mobileCategoryButton {
+  color: $primary-2;
+  margin-left: auto;
+}
+//? Mobile End

@@ -1,0 +1,68 @@
+@use "../../../styles/breakpoints";
+@import "../../../styles/palette";
+
+.modalAddress {
+  width: 35vw;
+  max-height: 82vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $tertiary-10;
+  overflow-x: auto;
+  border-radius: 10px;
+
+  & .imageIllustration {
+    background-image: url("../../../assets/images/illustration-add-new-address.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10vh;
+  }
+
+  & .formInputAddress {
+    padding: 1em 1.5em;
+
+    & .modalTitle {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    & .formControl {
+      margin-bottom: 1rem;
+
+      & .MuiSelect-outlined {
+        background-color: red;
+      }
+
+      & p {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+        color: #888888;
+      }
+
+      & .checkBoxAddress {
+        font-size: 12px;
+        font-weight: 700;
+        color: #888888;
+      }
+    }
+
+    & .btnConfirm {
+      background-color: $primary-8;
+      color: $tertiary-10;
+      font-size: 10px;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    & .btnCancel {
+      background-color: $tertiary-10;
+      color: $primary-8;
+      font-size: 10px;
+      font-weight: 700;
+    }
+  }
+}

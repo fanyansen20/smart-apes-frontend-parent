@@ -1,0 +1,94 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch !important;
+  border-radius: 5px;
+  border: 1px solid $tertiary-10;
+  padding: 0.5em 1em;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: $tertiary-5;
+  // box-shadow: 0px 2px 4px 0px #0000001a;
+}
+
+.react-calendar {
+  min-width: 100%;
+}
+
+.react-calendar__month-view__days {
+  & button {
+    border-radius: 5px;
+  }
+}
+
+.react-calendar__navigation__label__labelText {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.calendar-tile {
+  & abbr {
+    // background-color: $primary-8;
+    border-radius: 1em;
+    padding: 0.5em 0.9em;
+    box-sizing: border-box;
+  }
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day:hover {
+  background-color: $tertiary-10 !important;
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day:focus {
+  background-color: $tertiary-10 !important;
+}
+
+.react-calendar__month-view__weekdays__weekday.react-calendar__month-view__weekdays__weekday {
+  & abbr {
+    text-decoration: none;
+  }
+}
+
+.react-calendar__tile--now {
+  background-color: $tertiary-10;
+  color: $tertiary-10;
+
+  & abbr {
+    background-color: $tertiary-6;
+    border-radius: 1em;
+    padding: 0.5em 0.9em;
+    box-sizing: border-box;
+  }
+}
+
+.react-calendar__tile--active {
+  background-color: $tertiary-10;
+  color: $tertiary-10;
+
+  & abbr {
+    background-color: $primary-8;
+    border-radius: 1em;
+    padding: 0.5em 0.9em;
+    box-sizing: border-box;
+  }
+}
+
+.react-calendar__tile.react-calendar__year-view__months__month {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 10px;
+
+  & button {
+    border-radius: 5px;
+  }
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.react-calendar__month-view__weekdays {
+  text-transform: none;
+}

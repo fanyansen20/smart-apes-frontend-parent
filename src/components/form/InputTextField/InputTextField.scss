@@ -1,0 +1,53 @@
+.container-input-text-field {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 600;
+
+  & .label {
+    color: $tertiary-13;
+  }
+
+  & .label-error {
+    color: $quaternary-1;
+  }
+
+  & label {
+    margin-bottom: 0.5em;
+  }
+
+  & .MuiInputBase-root {
+    font-size: 12px;
+    font-weight: 400;
+    color: $tertiary-14;
+  }
+
+  & .MuiOutlinedInput-root {
+    & fieldset {
+      border: 1px solid $tertiary-6;
+    }
+  }
+
+  & .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: 1px solid $primary-8 !important;
+  }
+
+  & .MuiOutlinedInput-root.Mui-error {
+    & fieldset {
+      border: 1px solid $quaternary-1;
+    }
+  }
+
+  & .MuiOutlinedInput-root:hover {
+    & fieldset {
+      border: 1px solid $primary-8;
+    }
+  }
+
+  & .textField-helper-text {
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 500;
+    color: $quaternary-1;
+  }
+}

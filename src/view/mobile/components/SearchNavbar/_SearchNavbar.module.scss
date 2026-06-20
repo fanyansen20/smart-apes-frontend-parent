@@ -1,0 +1,27 @@
+@import "../../../../styles/theme/light-v2";
+
+.searchNavbar {
+  margin: 0 auto;
+  z-index: 99;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-width: 48rem;
+  background-color: $text-0;
+
+  .backIconBtn {
+    margin-top: 0.12em;
+    & .MuiTouchRipple-root {
+      right: 4px;
+      left: -4px;
+    }
+  }
+
+  .searchInput {
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    justify-content: space-between;
+  }
+}

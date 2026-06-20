@@ -1,0 +1,64 @@
+@use "../../styles/breakpoints";
+@import "../../styles/theme/light-v2";
+
+.containerChart {
+  border: 1px solid $brand-500;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  @include breakpoints.media(xs) {
+    border-radius: 6px;
+    gap: 0;
+  }
+
+  @include breakpoints.media(md) {
+    gap: 0.875rem;
+    border-radius: 1.25rem;
+  }
+
+  & .containerChartBar {
+    @include breakpoints.media(xs) {
+      padding: 1rem;
+      width: 90% !important;
+      height: 200px !important;
+    }
+
+    @include breakpoints.media(md) {
+      padding: 2rem;
+      width: 90% !important;
+      height: 400px !important;
+    }
+  }
+
+  & .sideTitle {
+    display: flex;
+    align-items: center;
+    background: $brand-500;
+
+    @include breakpoints.media(xs) {
+      padding: 0.8rem;
+    }
+
+    @include breakpoints.media(md) {
+      padding: 3.1rem;
+    }
+
+    & p {
+      font-weight: 700;
+      transform: rotate(-180deg);
+      color: $text-0;
+      writing-mode: tb-rl;
+      text-wrap: nowrap;
+
+      @include breakpoints.media(xs) {
+        font-size: 10px;
+      }
+
+      @include breakpoints.media(md) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

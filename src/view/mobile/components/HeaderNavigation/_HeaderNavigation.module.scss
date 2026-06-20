@@ -1,0 +1,19 @@
+@import "../../../../styles/theme/light-v2";
+
+.headerNavigationContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: $text-0;
+
+  & p {
+    font-weight: 700;
+  }
+}
+
+.headerNavigationCenterContainer {
+  @extend .headerNavigationContainer;
+
+  justify-content: center;
+}

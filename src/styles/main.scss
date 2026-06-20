@@ -1,0 +1,344 @@
+@use "../styles/breakpoints";
+@import "./theme/light-v2";
+
+.light-theme {
+  background: #f9fbfc;
+  @import "./theme/light";
+
+  @import "./all";
+}
+
+.dark-theme {
+  @import "./theme/dark";
+
+  @import "./all";
+}
+
+// Layout
+.content {
+  margin-top: 20px;
+
+  & .title {
+    p {
+      font-family: "Poppins";
+      font-weight: 700;
+      font-size: 24px;
+      color: #333333;
+    }
+  }
+
+  & .react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
+    left: 1px;
+  }
+
+  & .react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+    right: 1px;
+  }
+
+  & .arrow {
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+  }
+
+  & .right {
+    right: 1em;
+  }
+
+  & .left {
+    left: 1em;
+  }
+}
+
+// Navbar
+.drawerMenuCategory {
+  z-index: 1;
+
+  .css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+    background-color: none;
+  }
+
+  & .MuiDrawer-root {
+    z-index: 1 !important;
+  }
+
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorTop {
+    top: 193px !important;
+    box-shadow: none;
+    overflow-y: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    height: 78px;
+    background: #ccc;
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fafafa;
+  }
+}
+
+// Categories
+.categoriesContainer {
+  background-color: #ffffff;
+  height: 508px;
+  text-align: left;
+  margin: 0 auto;
+  & .parentCategories {
+    border-right: "1px solid #E4E4E4";
+    & .parentCategoriesDiv {
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      height: 508px;
+
+      & .parentCategory {
+        margin-top: 1rem;
+        padding: 0 1.5rem;
+        display: flex;
+        align-items: center;
+
+        & .parentCategoryText {
+          color: #ab7aff;
+          font-weight: 600;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+
+      & .categoryContainer {
+        color: #6c6b6b;
+        cursor: pointer;
+        gap: 0.25rem;
+
+        & .categoryDiv {
+          padding: 0.7rem 1.7rem;
+
+          &:hover {
+            background-color: #f6f6f6;
+          }
+
+          & .categoryText {
+            color: #6c6b6b;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 4px 0;
+          }
+
+          & .coming-soon-banner {
+            padding: 1px 14px;
+            text-align: center;
+            background-color: #f04438;
+            color: #ffffff;
+            & p {
+              line-height: 13px;
+              font-size: 10px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .subCategories {
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    overflow-y: scroll;
+    height: 508px;
+
+    & .subDiv {
+      display: flex;
+      flex-direction: column;
+
+      & .subCategoryDiv {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        color: #888888;
+        p {
+          margin-left: 10px;
+          font-size: 20px;
+          font-weight: 700;
+        }
+
+        & .subCategoryText {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      & .containerCategoryNextLevel {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 5px;
+        flex-wrap: wrap;
+
+        & .childCategoryDiv {
+          height: fit-content;
+          width: fit-content;
+          padding: 0.5rem;
+          cursor: pointer;
+          color: #888888;
+
+          & .categoryLevelTwo {
+            width: fit-content;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 5px 10px;
+            background-color: #a588f6;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+
+          & .categoryLevelThree {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 4px 1px;
+            & a {
+              color: inherit;
+            }
+
+            &:hover {
+              color: #bc3ce9;
+            }
+          }
+        }
+        & .childCategorySecondary {
+          background-color: red;
+          grid-column: 5;
+          grid-row: 1 / span 4;
+        }
+      }
+    }
+  }
+}
+
+// Avatar popover
+.menuUser {
+  & .MuiPaper-root {
+    border-radius: 10px;
+  }
+
+  & .userList {
+    background-color: transparent;
+    cursor: default;
+
+    & .user {
+      display: flex;
+      gap: 1rem;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      & .profile {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        & .name {
+          font-weight: 700;
+          font-size: 16px;
+          color: #6c6b6b;
+        }
+
+        & .rank {
+          font-weight: 500;
+          font-size: 11px;
+          color: #f0c014;
+        }
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  & .menuItem {
+    & .menuList {
+      padding: 7px;
+      display: flex;
+      gap: 1rem;
+      color: $sec-text-500;
+    }
+
+    &:hover {
+      * {
+        color: #6c6b6b;
+      }
+    }
+  }
+}
+
+input {
+  font-family: "Poppins" !important;
+}
+
+.MuiInputBase-root {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.MuiFormHelperText-root {
+  color: #e03b3b !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins" !important;
+}
+
+.MuiTypography-root {
+  font-family: "Poppins";
+}
+
+.MuiButtonBase-root {
+  text-transform: none;
+  font-family: "Poppins";
+}
+
+.MuiLinearProgress-bar {
+  background-color: $brand-500;
+  border-radius: 0 5px 5px 0;
+}
+
+.MuiTabs-root {
+  .Mui-selected {
+    color: $brand-500;
+    font-weight: 600;
+  }
+  .MuiTabs-indicator {
+    background-color: $brand-500;
+  }
+}
+
+// .MuiTouchRipple-child {
+//   background-color: green;
+// }
+
+.layoutChildren {
+  background-color: #f5f7fc;
+
+  @include breakpoints.media(xs) {
+    padding-top: 60px;
+    min-height: calc(100vh - 60px);
+  }
+
+  @include breakpoints.media(md) {
+    padding-top: 64px;
+    min-height: calc(100vh - 64px);
+  }
+}

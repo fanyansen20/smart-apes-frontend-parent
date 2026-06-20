@@ -1,0 +1,130 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.borderContainer {
+  border-width: 1px;
+  border-color: $grey-200 !important;
+  border-style: solid;
+  border-radius: 0.5rem;
+}
+
+.assessmentSubjectTitle {
+  color: $text-500;
+  font-size: 1rem;
+  font-weight: bold !important;
+  margin-right: 1rem;
+}
+
+.assessmentItem {
+  @extend .borderContainer;
+
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+
+  .overlay {
+    @extend .borderContainer;
+
+    border: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(179, 153, 251, 0.8) 93%
+    );
+    z-index: 2;
+    backdrop-filter: blur(1.5px);
+
+    .overlayContent {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.5rem;
+
+      p {
+        font-family: "Mulish";
+        font-size: 1rem;
+        font-weight: 700;
+        color: $sec-text-500;
+      }
+    }
+  }
+
+  & .assessmentInfoContainer {
+    display: flex;
+    flex: 1;
+
+    & .assessmentInfo {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .assessmentDone {
+      @extend .assessmentInfo;
+
+      justify-content: center;
+      align-items: center;
+      padding: 0.3rem 1rem;
+      background-color: $success-500;
+      border-radius: 0.4rem;
+      max-width: 11rem;
+      max-height: 1.6rem;
+    }
+
+    & .assessmentTitle {
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-500;
+      margin-right: 1rem;
+    }
+
+    & .assessmentTitleTruncate {
+      @extend .assessmentTitle;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & .subtitle {
+      font-size: 12px;
+      font-weight: 600;
+      color: $text-300;
+    }
+
+    .subtitleDone {
+      @extend .subtitle;
+
+      color: $text-0 !important;
+    }
+  }
+
+  & button {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+  }
+
+  .actionButton {
+    @extend button;
+
+    padding: 0rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 0.5rem;
+    border: 1px $grey-200 solid;
+    background-color: $text-0;
+  }
+}

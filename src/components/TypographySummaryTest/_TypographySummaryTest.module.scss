@@ -1,0 +1,54 @@
+@use "../../styles/breakpoints";
+@import "../../styles/theme/light-v2";
+
+.headerContent {
+  background: transparent
+    url("../../assets/images/ChildrenDashboard/summary-test/background-summary-sub-title.svg")
+    no-repeat center;
+  background-size: cover;
+
+  border-radius: 1.3rem;
+  margin: 0 9.3rem;
+
+  & p {
+    font-weight: 700;
+    font-size: 3.3rem;
+    color: $text-0;
+    padding: 1.75rem 0;
+    text-align: center;
+  }
+}
+
+.subHeaderContent {
+  display: flex;
+  justify-content: center;
+
+  @include breakpoints.media(xs) {
+    background-color: #ffc601;
+    padding: 0 2rem;
+  }
+
+  @include breakpoints.media(md) {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  & p {
+    text-align: center;
+
+    @include breakpoints.media(xs) {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 0.5rem;
+    }
+
+    @include breakpoints.media(md) {
+      background-color: #ffc601;
+      width: fit-content;
+      font-weight: 700;
+      font-size: 2rem;
+      color: $text-0;
+      padding: 0.75rem 5.5rem;
+    }
+  }
+}

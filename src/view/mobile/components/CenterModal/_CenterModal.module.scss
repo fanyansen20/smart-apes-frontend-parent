@@ -1,0 +1,30 @@
+@import "../../../../styles/theme/light-v2";
+
+.modalContainer {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $text-0;
+  padding: 1rem;
+  border-radius: 8px;
+
+  & .textColor {
+    color: $text-500;
+  }
+
+  & .title {
+    @extend .textColor;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  & .subtitle {
+    @extend .textColor;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../../../../../../styles/theme/light-v2";
+
+.subTitle {
+  color: $sec-text-500 !important;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+table {
+  border: 1px solid $grey-50;
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: 700;
+  color: $brand-500;
+  text-align: left;
+
+  background-color: $grey-0;
+}
+
+th:last-child {
+  display: flex;
+  gap: 0.5rem;
+  padding-right: 77px;
+}
+
+th,
+td {
+  border-bottom: 1px solid $grey-50;
+  padding: 15px;
+}
+
+td {
+  color: $text-500;
+  font-weight: 700;
+}
+
+.disabledTable {
+  & td {
+    background-color: $grey-0;
+    color: $text-200;
+    font-weight: 700;
+  }
+
+  & .checkbox {
+    color: $text-200 !important;
+  }
+}
+
+.checkbox {
+  color: $brand-500 !important;
+}

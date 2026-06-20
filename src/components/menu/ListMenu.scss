@@ -1,0 +1,115 @@
+@use "../../styles/breakpoints";
+.menu {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  margin-top: -1px !important;
+
+  & .MuiContainer-root {
+    justify-content: space-evenly;
+
+    & .MuiPaper-root {
+      & .MuiList-root {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  & div {
+    @include breakpoints.media(xs) {
+      height: 35px;
+    }
+    @include breakpoints.media(md) {
+      height: 67px;
+    }
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: $tertiary-10;
+    overflow-x: auto;
+
+    & .itemMenu {
+      // min-width: 8em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0.3em;
+      gap: 0.62rem;
+      font-family: "Poppins";
+      color: $tertiary-22;
+      text-decoration: none;
+      cursor: pointer;
+
+      & svg {
+        @include breakpoints.media(xs) {
+          display: none;
+          padding-right: 0;
+        }
+        @include breakpoints.media(md) {
+          display: block;
+        }
+        stroke: $tertiary-22;
+      }
+
+      & .textMenu {
+        @include breakpoints.media(xs) {
+          font-size: 10px;
+        }
+        @include breakpoints.media(md) {
+          font-size: 16px;
+        }
+
+        font-weight: 700;
+      }
+    }
+
+    & .orderMenu {
+      cursor: pointer;
+      user-select: none;
+      align-items: center;
+    }
+
+    & .itemMenu-active {
+      // min-width: 8em;
+      font-family: "Poppins";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0.3em;
+      gap: 0.62rem;
+      color: $primary-7;
+      border-bottom: 2px solid $primary-7;
+
+      & svg {
+        color: $primary-7;
+        @include breakpoints.media(xs) {
+          display: none;
+          padding-right: 0;
+        }
+        @include breakpoints.media(md) {
+          display: block;
+        }
+        stroke: $primary-7;
+      }
+
+      & .textMenu {
+        @include breakpoints.media(xs) {
+          font-size: 10px;
+        }
+        @include breakpoints.media(md) {
+          font-size: 16px;
+        }
+
+        font-weight: 700;
+      }
+    }
+
+    & .menuComponent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

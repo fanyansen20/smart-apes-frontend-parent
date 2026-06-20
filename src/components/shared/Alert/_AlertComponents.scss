@@ -1,0 +1,127 @@
+.iconVariantComponent {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.closeIconComponent {
+  width: 20px !important;
+  height: 20px !important;
+  margin-right: 20px;
+  color: $secondary-5 !important;
+}
+
+.AlertComponentSucces {
+  width: 443px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  border: 1px solid $quaternary-3;
+  border-left: 10px solid $quaternary-3;
+  background-color: $quaternary-7 !important;
+  text-align: left;
+  & .AlertTittle {
+    font-weight: 600;
+    color: $secondary-2;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  & .AlertSubTittle {
+    width: 300px;
+    font-weight: 400;
+    font-size: 12px;
+    color: $secondary-2;
+  }
+  & .MuiSvgIcon-root {
+    color: $quaternary-3;
+  }
+}
+
+.AlertComponentError {
+  width: 443px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  border: 1px solid $tertiary-1;
+  border-left: 10px solid $tertiary-1;
+  background-color: $tertiary-7 !important;
+  text-align: left;
+  & .AlertTittle {
+    font-weight: 600;
+    color: $secondary-2;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  & .AlertSubTittle {
+    width: 300px;
+    font-weight: 400;
+    font-size: 12px;
+    color: $secondary-2;
+  }
+  & .MuiSvgIcon-root {
+    color: $tertiary-1;
+  }
+}
+
+.AlertComponentInfo {
+  width: 443px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  border: 1px solid $senary-3;
+  border-left: 10px solid $senary-3;
+  background-color: $senary-7 !important;
+  text-align: left;
+  & .AlertTittle {
+    font-weight: 600;
+    color: $secondary-2;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  & .AlertSubTittle {
+    width: 300px;
+    font-weight: 400;
+    font-size: 12px;
+    color: $secondary-2;
+  }
+  & .MuiSvgIcon-root {
+    color: $senary-3;
+  }
+}
+
+.AlertComponentWarning {
+  width: 443px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  border: 1px solid $quinary-2;
+  border-left: 10px solid $quinary-2;
+  background-color: $quinary-7 !important;
+  text-align: left;
+  & .AlertTittle {
+    font-weight: 600;
+    color: $secondary-2;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  & .AlertSubTittle {
+    width: 300px;
+    font-weight: 400;
+    font-size: 12px;
+    color: $secondary-2;
+  }
+
+  & .AlertSubTittleText {
+    @extend .AlertSubTittle;
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  & .MuiSvgIcon-root {
+    color: $quinary-2;
+  }
+}

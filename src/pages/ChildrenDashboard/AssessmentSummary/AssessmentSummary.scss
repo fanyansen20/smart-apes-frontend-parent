@@ -1,0 +1,460 @@
+@use "../../../styles/breakpoints";
+
+.containerAssessmentSummary {
+  padding: 1.5rem 0;
+  background-color: $tertiary-10;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  @include breakpoints.media(xs) {
+    font-size: 10px;
+  }
+  @include breakpoints.media(md) {
+    font-size: 16px;
+  }
+
+  & .assessmentHeader {
+    background-size: auto;
+    background-position: -50% 100%;
+    background-repeat: no-repeat;
+    background-color: $primary-8;
+    padding: 1rem 1.3rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & p {
+      font-family: "Mulish";
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: $tertiary-10;
+    }
+
+    & svg {
+      cursor: pointer;
+    }
+  }
+
+  & .content {
+    background-color: $tertiary-10;
+    border: 1px solid $tertiary-9;
+    border-radius: 5px;
+    padding: 1rem;
+
+    & section {
+      margin-top: 2em;
+
+      & .sectionTitle {
+        font-family: "Mulish";
+        font-size: 0.9em;
+        font-weight: 700;
+        color: $tertiary-14;
+        margin-bottom: 0.3em;
+      }
+
+      & .sectionSubTitle {
+        font-size: 0.875em;
+        font-weight: 400;
+        color: $tertiary-5;
+        margin-bottom: 1.5em;
+      }
+
+      & .topicsCard {
+        border: 1px solid $tertiary-9;
+        border-radius: 5px;
+
+        & .topicsCardHeader {
+          padding: 0.75em;
+          border-bottom: 1px solid $tertiary-9;
+          font-family: "Mulish";
+          font-size: 0.875em;
+          font-weight: 700;
+          color: $tertiary-14;
+        }
+      }
+
+      & .topicsCardContent {
+        padding: 0.7em 0;
+
+        & .progressWrapper {
+          @include breakpoints.media(xs) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          @include breakpoints.media(md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          @include breakpoints.media(lg) {
+            display: block;
+          }
+
+          & .progressTitle {
+            font-family: "Mulish";
+            font-size: 0.75em;
+            font-weight: 700;
+            color: #4eb7b5;
+            text-align: center;
+            margin-bottom: 0.5em;
+          }
+
+          & .CircularProgressbar-trail {
+            fill: #f43064;
+            background-color: #f43064;
+          }
+
+          & .CircularProgressbar-path {
+            height: 4em;
+          }
+
+          & .progressBar {
+            position: relative;
+            height: 8em;
+
+            @include breakpoints.media(xs) {
+              width: 50%;
+              display: flex;
+              justify-content: center;
+            }
+            @include breakpoints.media(md) {
+              width: 50%;
+              display: flex;
+              justify-content: center;
+            }
+            @include breakpoints.media(lg) {
+              width: 100%;
+            }
+
+            & .progressText {
+              position: absolute;
+              top: 2.2em;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-family: "Mulish";
+              font-size: 2.5em;
+              font-weight: 700;
+              color: #4eb7b5;
+
+              & span {
+                font-size: 0.75rem;
+              }
+            }
+          }
+
+          & .answered {
+            text-align: center;
+            font-family: "Mulish";
+            font-size: 0.625em;
+            font-weight: 700;
+            color: $tertiary-14;
+          }
+
+          & .rightAnswer {
+            text-align: center;
+            font-family: "Mulish";
+            font-size: 1em;
+            font-weight: 700;
+            color: $tertiary-14;
+
+            & span {
+              color: #4eb7b5;
+            }
+          }
+        }
+
+        & .wrapperSubTopic {
+          padding-right: 1em;
+
+          & p {
+            font-family: "Mulish";
+            font-size: 0.75em;
+            font-weight: 700;
+            color: $tertiary-14;
+          }
+
+          & table {
+            border: 1px solid $tertiary-7;
+            margin-top: 0.5rem;
+            width: 100%;
+
+            & td {
+              padding: 0.7em;
+            }
+
+            & thead {
+              font-family: "Mulish";
+              font-size: 0.625em;
+              font-weight: 700;
+              color: $tertiary-14;
+              border-radius: 5px 5px 0 0;
+            }
+
+            & thead,
+            tr {
+              border-bottom: 1px solid $tertiary-7;
+            }
+
+            & tbody {
+              font-family: "Mulish";
+              font-size: 0.625em;
+              font-weight: 700;
+              color: $tertiary-5;
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+
+      & .noTopics {
+        margin-top: 3em;
+        text-align: center;
+        font-family: "Mulish";
+        font-size: 1em;
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      & .productCard {
+        box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+
+        & .productImage {
+          display: flex;
+          justify-content: center;
+          position: relative;
+          cursor: pointer;
+
+          & img {
+            filter: drop-shadow(0px 0px 5px $tertiary-6);
+            border-radius: 5px 5px 0 0;
+            width: 100%;
+          }
+
+          & .discountFlag {
+            position: absolute;
+            top: 0;
+            right: 0.6rem;
+            min-height: 3rem;
+            background-image: url("../../../assets/images/discount-flag.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: $tertiary-10;
+            font-weight: 700;
+            text-align: center;
+            padding: 0.25rem 0.38rem;
+
+            & p:first-child {
+              font-size: 0.875rem;
+              margin-bottom: 0.2rem;
+            }
+
+            & p:last-child {
+              font-size: 0.625rem;
+            }
+          }
+        }
+
+        & .cardContent {
+          cursor: pointer;
+          padding: 0.5rem 0.7rem;
+          min-height: 120px;
+
+          & .productName {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: $tertiary-22;
+            cursor: pointer;
+            min-height: 2.7rem;
+          }
+
+          & .productStat {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+
+            & .ratings {
+              display: flex;
+              align-items: center;
+              gap: 0.3rem;
+            }
+
+            & p {
+              font-size: 0.75em;
+              font-weight: 500;
+              color: #686f7a;
+            }
+
+            & svg {
+              fill: #f4c150;
+            }
+          }
+
+          & .productPrice {
+            font-size: 1rem;
+            font-weight: 700;
+            color: $tertiary-22;
+            margin-top: 0.5rem;
+          }
+
+          & .productBasePrice {
+            margin-top: 0.3rem;
+            color: $tertiary-6;
+            text-decoration: line-through;
+            font-size: 0.875rem;
+          }
+        }
+
+        & .productBtn {
+          display: flex;
+          justify-content: flex-end;
+
+          & button {
+            margin: 0 0.5rem 0.5rem;
+            background-color: $primary-8;
+            color: $tertiary-10;
+            border-radius: 5px !important;
+            font-size: 0.7em;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    & header {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      font-family: "Mulish";
+      font-size: 1em;
+      font-weight: 700;
+
+      & p:nth-child(1) {
+        color: $tertiary-14;
+      }
+
+      & p:nth-child(2) {
+        color: $tertiary-13;
+      }
+    }
+
+    & .banner {
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      background-color: #4eb7b5;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      object-fit: cover;
+
+      & .containerBadge {
+        box-sizing: border-box;
+        height: 100%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+      }
+
+      & .bannerHeading {
+        @include breakpoints.media(xs) {
+          padding: 1em;
+        }
+        @include breakpoints.media(md) {
+          padding: 1em 0.5em 0 0.5em;
+        }
+
+        color: $tertiary-10;
+        font-family: "Mulish";
+        font-size: 0.75em;
+        font-weight: 700;
+      }
+
+      & hr {
+        border: 1px solid $tertiary-10;
+      }
+
+      & .bannerContent {
+        @include breakpoints.media(xs) {
+          padding: 1em;
+        }
+        @include breakpoints.media(md) {
+          padding: 0.5em;
+        }
+        height: 60%;
+
+        & h1 {
+          padding-bottom: 1rem;
+          font-family: "Mulish";
+          font-size: 1.5em;
+          font-weight: 700;
+          color: $tertiary-10;
+
+          & .percent {
+            font-size: 0.75rem;
+          }
+        }
+
+        & div {
+          display: flex;
+          align-items: center;
+        }
+
+        & .totalScore {
+          display: flex;
+          align-items: center;
+
+          & .totalScoreText {
+            font-size: 4.5em !important;
+          }
+        }
+
+        & .topicWrapper {
+          overflow-y: auto;
+
+          @include breakpoints.media(xs) {
+            padding: 0 1em;
+          }
+          @include breakpoints.media(md) {
+            padding: 0;
+          }
+
+          & .topicScore {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & p {
+              min-height: 2em;
+              padding-bottom: 1em;
+              font-family: "Mulish";
+              font-size: 0.625em;
+              font-weight: 700;
+              color: $tertiary-10;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .btnBack {
+    margin-top: 1rem;
+    text-align: right;
+
+    & button {
+      font-family: "Poppins";
+      font-size: 0.625em;
+      font-weight: 700;
+      color: $tertiary-10;
+      background-color: $primary-8;
+    }
+  }
+}

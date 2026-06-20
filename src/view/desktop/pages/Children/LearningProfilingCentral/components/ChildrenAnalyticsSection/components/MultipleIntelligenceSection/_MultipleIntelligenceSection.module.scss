@@ -1,0 +1,41 @@
+@import "../TypologySection/TypologySection.module";
+
+.textDescription {
+  text-align: justify;
+  line-height: 1.875rem;
+  color: $text-500;
+}
+
+.tableHeaderContainer {
+  background-color: #f5f5fb;
+  padding: 0.7rem 0 0.7rem 3rem;
+
+  & p {
+    color: $brand-500;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+.tableContentContainer {
+  background-color: #fcfcfc;
+
+  & .row {
+    display: flex;
+    align-items: center;
+  }
+
+  & .tableLeftContent {
+    @extend .row;
+    padding: 1rem 0 1rem 3rem;
+
+    & p {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  & .tableRightContent {
+    @extend .row;
+  }
+}

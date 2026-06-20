@@ -1,0 +1,106 @@
+@use "../../../../styles/breakpoints";
+@import "../../../../styles/theme/light-v2";
+
+.heroSection {
+  background-color: $brand-500;
+  background-image: linear-gradient(to right top, #a297ed, #7e54f1);
+
+  @include breakpoints.media(xs) {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  @include breakpoints.media(md) {
+    width: 33.5rem;
+    padding: 2.8rem;
+    border-radius: 1.3rem;
+  }
+
+  & p {
+    font-weight: 700;
+    color: $text-0;
+    margin-bottom: 0.3rem;
+
+    @include breakpoints.media(xs) {
+      font-size: 1rem;
+    }
+
+    @include breakpoints.media(md) {
+      font-size: 1.375rem;
+    }
+  }
+
+  & .podiumContainer {
+    position: relative;
+
+    @include breakpoints.media(xs) {
+      padding: 1rem 0;
+    }
+
+    @include breakpoints.media(md) {
+      padding: 0;
+    }
+
+    & .podiumAnalytics {
+      @include breakpoints.media(xs) {
+        width: 130px;
+        margin-bottom: -1rem;
+      }
+
+      @include breakpoints.media(md) {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+    & .textPodium {
+      color: $text-0;
+      font-weight: 700;
+    }
+
+    & .firstPodium {
+      @extend .textPodium;
+      align-items: flex-end;
+
+      @include breakpoints.media(xs) {
+        font-size: 50px;
+        margin-bottom: -10%;
+      }
+
+      @include breakpoints.media(md) {
+        font-size: 5rem;
+        margin-bottom: 0;
+      }
+    }
+
+    & .secondPodium {
+      @extend .textPodium;
+      align-items: flex-end;
+
+      @include breakpoints.media(xs) {
+        font-size: 40px;
+        margin-bottom: -23%;
+      }
+
+      @include breakpoints.media(md) {
+        font-size: 3rem;
+        margin-bottom: -15%;
+      }
+    }
+
+    & .thirdPodium {
+      @extend .textPodium;
+      align-items: flex-end;
+
+      @include breakpoints.media(xs) {
+        font-size: 30px;
+        margin-bottom: -27%;
+      }
+
+      @include breakpoints.media(md) {
+        font-size: 2.25rem;
+        margin-bottom: -20%;
+      }
+    }
+  }
+}

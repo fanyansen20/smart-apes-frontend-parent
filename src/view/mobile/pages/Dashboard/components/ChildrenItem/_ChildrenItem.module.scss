@@ -1,0 +1,73 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.children-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  background-color: $text-0;
+  padding: 1em;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $grey-200;
+  margin-bottom: 0.5em;
+
+  & .children-content-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  & .children-profile-name {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+
+    & p {
+      font-size: 16px;
+      font-weight: 600;
+      color: $text-500;
+      margin-left: 1rem;
+    }
+  }
+
+  & .children-arrow {
+    padding: 5;
+  }
+
+  & .children-picture {
+    background-color: $grey-0;
+    box-shadow: 0px 2px 4px 0px #0000001a;
+    width: 100%;
+    max-width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  & .children-picture-circle {
+    @extend .children-picture;
+
+    border-radius: 70px;
+  }
+
+  & .btn-container-row {
+    display: flex;
+    gap: 0.5rem;
+
+    & .linkBtn {
+      display: flex;
+      flex: 1;
+
+      & button {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  & .btn-container-column {
+    @extend .btn-container-row;
+
+    flex-direction: column;
+  }
+}

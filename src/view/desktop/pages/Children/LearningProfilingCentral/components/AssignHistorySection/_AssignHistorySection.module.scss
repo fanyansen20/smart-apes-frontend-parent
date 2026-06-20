@@ -1,0 +1,30 @@
+@import "../../../../../../../styles/theme/light-v2";
+
+.containerAssignHistory {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & h1 {
+    color: $text-500;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.5rem;
+  }
+
+  & .containerTableProfilingTest {
+    z-index: 2;
+    background-color: $text-0;
+    border: 1px solid $text-50;
+    border-radius: 0.5rem;
+
+    padding: 1.5rem;
+
+    & .containerProfilingProduct {
+      display: flex;
+      justify-content: space-around;
+
+      gap: 1.3rem;
+    }
+  }
+}

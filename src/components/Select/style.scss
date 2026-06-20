@@ -1,0 +1,70 @@
+.mui-select-form-control {
+  width: 100%;
+  max-height: 280px;
+}
+
+.mui-select-container {
+  max-height: 280px;
+  font-family: "Poppins";
+
+  & .MuiOutlinedInput-root {
+    font-size: 13px;
+    height: 43.13px;
+    & .MuiOutlinedInput-root:hover fieldset {
+      border-color: #7e54f1;
+    }
+
+    & .MuiOutlinedInput-root:focus-visible {
+      outline: none !important;
+    }
+
+    & .mui-menu-item {
+      font-size: 14px;
+      padding-right: 0;
+      transition: 0.3s ease-in-out;
+      & .Mui-selected {
+        background-color: "#EEEEEE";
+      }
+      & .Mui-selected:hover {
+        background-color: "#EEEEEE";
+      }
+    }
+
+    & .selected-text {
+      font-size: 13px;
+    }
+  }
+  .Mui-focused fieldset {
+    border-color: #7e54f1 !important;
+    border-width: 1px !important;
+  }
+}
+.mui-select-container::-webkit-scrollbar {
+  width: 8px;
+}
+.mui-select-container::-webkit-scrollbar-thumb {
+  background: rgb(218, 218, 218);
+  border-radius: 4px;
+}
+.mui-select-container::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.mui-nested-menu {
+  max-height: 200px;
+  overflow: hidden auto;
+}
+
+.mui-nested-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mui-nested-menu::-webkit-scrollbar-thumb {
+  background: rgb(218, 218, 218);
+  border-radius: 4px;
+}
+
+.mui-nested-menu::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 4px;
+}

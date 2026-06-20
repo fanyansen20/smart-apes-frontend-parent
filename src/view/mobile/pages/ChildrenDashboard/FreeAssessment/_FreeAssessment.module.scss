@@ -1,0 +1,258 @@
+@import "../../../../../styles/theme/light-v2";
+
+.containerFreeAssessment {
+  background-color: $text-0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  width: 100%;
+
+  & .assessmentHeader {
+    background-size: auto;
+    background-position: -50% 100%;
+    background-repeat: no-repeat;
+    background-color: $brand-500;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    display: flex;
+
+    & p {
+      font-family: "Mulish";
+      font-size: 1rem;
+      font-weight: bold;
+      color: $text-0;
+    }
+  }
+
+  & .questionAlert {
+    margin-top: 1em;
+    font-family: "Mulish";
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    & .MuiAlert-message {
+      width: 100%;
+    }
+
+    & .unansweredQuestion {
+      width: 100%;
+      display: flex;
+
+      & p {
+        margin-top: 0.3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5em;
+        height: 1em;
+        width: 1em !important;
+        border-radius: 50%;
+        background-color: #ed6c02;
+        color: $text-0;
+        margin-right: 0.3em;
+        cursor: pointer;
+      }
+    }
+  }
+
+  & .questionSection {
+    padding: 1rem 1rem;
+    background-color: $text-0;
+    box-shadow: 0px 4px 16px 0px #0000001a;
+    border-radius: 5px;
+
+    & .questionNumberText {
+      font-weight: bold;
+      color: $brand-600;
+      letter-spacing: 1px;
+    }
+
+    & .btn__flag {
+      font-size: 15px;
+      font-weight: 400;
+      color: $error-500;
+
+      & svg {
+        fill: $error-500;
+      }
+    }
+
+    & h3 {
+      font-family: "Mulish";
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $grey-800;
+      margin-bottom: 0.5rem;
+    }
+
+    & h5 {
+      font-family: "Mulish";
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: $grey-300;
+      margin-bottom: 1rem;
+    }
+
+    & .containerImages {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      & .questionImage {
+        background-color: $text-0;
+        width: 14rem;
+        aspect-ratio: 1;
+        object-fit: contain;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+
+      & .__react_modal_image__medium_img {
+        background-color: $text-0;
+      }
+    }
+
+    & p {
+      font-family: "Poppins";
+      font-size: 0.938rem;
+      font-weight: 400;
+      text-align: justify;
+      color: $grey-800;
+      line-height: 1.3rem;
+    }
+  }
+
+  & .questionAndAnswer {
+    margin-top: 1rem;
+
+    & .question {
+      min-height: 3rem;
+      box-sizing: border-box;
+      padding: 1rem 1.3rem;
+      margin-bottom: 1rem;
+      background-color: $text-50;
+      font-family: "Mulish";
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: $text-500;
+    }
+
+    & .answers {
+      min-height: 3rem;
+      box-sizing: border-box;
+      background-color: #f1efff;
+      box-shadow: 0px 4px 16px 0px #0000001a;
+      margin-bottom: 0.5rem;
+
+      & .MuiTouchRipple-child {
+        background-color: $brand-500;
+      }
+
+      & .optionWrapper {
+        width: 100%;
+        display: flex;
+        gap: 0.3rem;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 0.7rem;
+
+        & p {
+          font-family: "Mulish";
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: $text-500;
+        }
+
+        & .containerOptionsImage {
+          display: flex;
+
+          & div {
+            display: flex;
+            gap: 0.5rem;
+
+            & .optionImage {
+              background-color: $text-0;
+              margin: 0 0.3rem;
+              width: 3rem;
+              aspect-ratio: 1;
+              border-radius: 5px;
+              object-fit: contain;
+            }
+
+            & .__react_modal_image__medium_img {
+              background-color: $text-0;
+            }
+          }
+        }
+      }
+    }
+
+    & .answerActive {
+      background-color: $brand-500;
+
+      & .optionWrapper {
+        & p {
+          color: $text-0;
+        }
+      }
+    }
+
+    & .answer:active {
+      background-color: $brand-500;
+    }
+  }
+
+  & .btnGroup {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 2rem;
+
+    & button {
+      font-family: "Mulish";
+      font-size: 0.625rem;
+      font-weight: 700;
+      width: 7rem;
+    }
+
+    & .leftBtn {
+      border: 1px solid $brand-500;
+      background-color: $text-50;
+      color: $brand-500;
+    }
+
+    & .rightBtn {
+      background-color: $brand-500;
+      color: $text-0;
+    }
+  }
+
+  & .question__navigation {
+    background-color: $text-0;
+    box-shadow: 0px 4px 16px 0px #0000001a;
+    border-radius: 5px;
+    padding: 1em;
+    max-height: 13rem;
+    margin: 0.6rem 1.25rem;
+
+    & .containerButtonNavigation {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    }
+
+    & .btn__submit {
+      font-family: "Poppins";
+      font-size: 12px;
+      font-weight: 700;
+      color: $text-0;
+      margin-top: 1rem;
+    }
+
+    & .MuiButton-root.Mui-disabled {
+      background-color: #e0e0e0 !important;
+    }
+  }
+}

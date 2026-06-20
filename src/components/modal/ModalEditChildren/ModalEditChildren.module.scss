@@ -1,0 +1,149 @@
+@use "../../../styles/breakpoints";
+@import "../../../styles/palette";
+
+.modal {
+  @include breakpoints.media(xs) {
+    width: 90vw;
+  }
+  @include breakpoints.media(md) {
+    width: 35vw;
+  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $tertiary-10;
+  border-radius: 10px;
+  padding: 1.5em 1.5em;
+
+  & .modalTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: $tertiary-14;
+    margin-bottom: 1rem;
+  }
+
+  & .profileSection {
+    position: relative;
+    background-color: $tertiary-8;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & .removeImg {
+      width: 1.5rem;
+      aspect-ratio: 1;
+      position: absolute;
+      top: 0.1em;
+      right: 0.1em;
+      cursor: pointer;
+      color: $quaternary-1;
+    }
+
+    & img {
+      width: 7rem;
+      border-radius: 5px;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+
+    & .noProfile {
+      padding: 0.5rem;
+      border: 3px solid $tertiary-6;
+      border-radius: 50%;
+    }
+
+    & p {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      color: $tertiary-5;
+    }
+  }
+
+  & .uploadSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 8rem;
+    padding: 0 1rem;
+
+    & label {
+      background-color: $primary-8;
+      color: $tertiary-10;
+      font-size: 10px;
+      font-weight: 700;
+      margin-bottom: 1em;
+    }
+
+    & button {
+      background-color: $quaternary-1;
+      color: $tertiary-10;
+      font-size: 10px;
+      font-weight: 700;
+      margin-bottom: 1em;
+    }
+
+    & p {
+      font-size: 10px;
+      font-weight: 600;
+      color: $tertiary-6;
+    }
+  }
+
+  & .formControl {
+    margin-bottom: 1rem;
+
+    & p {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: #888888;
+    }
+
+    & .datePicker {
+      min-width: 100% !important;
+
+      & input {
+        padding: 8.5px;
+      }
+    }
+
+    & .errorText {
+      font-family: "Poppins";
+      font-size: 12px;
+      font-weight: 700;
+      color: $quaternary-1;
+      margin-top: 0.5rem;
+      padding-left: 0.75rem;
+    }
+  }
+
+  & .btnSubmit {
+    background-color: $primary-8;
+    color: $tertiary-10;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  & .MuiButton-root.Mui-disabled {
+    background-color: $tertiary-5 !important;
+  }
+
+  & .btnCancel {
+    background-color: $tertiary-10;
+    color: $primary-8;
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
+.modal:focus {
+  outline: none !important;
+}

@@ -1,0 +1,10 @@
+@import "../../../styles/theme/light-v2";
+
+.text-button {
+  font-weight: 700;
+  color: $brand-500;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: $text-0;
+  padding: 0.375rem 0.5rem;
+}

@@ -1,0 +1,164 @@
+.containerChildrenSidebar {
+  & .sectionTitle {
+    font-family: "Mulish";
+    font-size: 1rem;
+    font-weight: 700;
+    color: $tertiary-14;
+    margin-bottom: 1rem;
+  }
+
+  & .profileSection {
+    border: 1px solid $tertiary-17;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+
+    & .upperProfile {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      & h3 {
+        font-family: "Mulish";
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $tertiary-14;
+        text-align: center;
+      }
+
+      & .status {
+        display: flex;
+        gap: 1rem;
+
+        & h5 {
+          font-family: "Mulish";
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: $tertiary-5;
+        }
+      }
+    }
+
+    & .bottomProfile {
+      border-top: 1px solid $tertiary-17;
+
+      & button {
+        border-radius: 0 0 4px 4px;
+        & .MuiTouchRipple-child {
+          background-color: $primary-8;
+        }
+
+        & p {
+          font-family: "Poppins";
+          font-size: 0.75rem;
+          font-weight: 600;
+          color: $tertiary-16;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  & .recentAssessment {
+    border: 1px solid $primary-2;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+
+    & .MuiTouchRipple-child {
+      background-color: $primary-8;
+    }
+
+    & .contentWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & img {
+        width: 4.375rem;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      & .assessmentTitle {
+        text-align: left;
+        margin-left: 0.5rem;
+
+        & h3 {
+          font-family: "Mulish";
+          font-size: 0.875rem;
+          line-height: 0.875rem;
+          font-weight: 700;
+          color: $tertiary-14;
+          margin-bottom: 0.3rem;
+        }
+
+        & h5 {
+          background-color: $quinary-1;
+          width: fit-content;
+          padding: 0.2rem 0.4rem;
+          border-radius: 2px;
+          font-family: "Poppins";
+          font-size: 0.5rem;
+          font-weight: 600;
+          color: $tertiary-10;
+        }
+      }
+
+      & svg {
+        color: $tertiary-14;
+      }
+    }
+  }
+
+  & .childrenCalendar {
+    border: 1px solid $tertiary-17;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  & .upcomingEvents {
+    border: 1px solid $tertiary-18;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h3 {
+      font-family: "Mulish";
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: $tertiary-14;
+      margin-top: 0.5rem;
+    }
+
+    & h5 {
+      font-family: "Poppins";
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: $tertiary-16;
+    }
+
+    & button {
+      font-family: "Poppins";
+      font-size: 0.65rem;
+      font-weight: 700;
+    }
+
+    & .noEvent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4.5rem;
+      font-family: "Mulish";
+      font-size: 1rem;
+      font-weight: 700;
+      color: $tertiary-14;
+    }
+  }
+}

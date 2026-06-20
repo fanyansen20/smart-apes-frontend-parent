@@ -1,0 +1,21 @@
+@import "../../../../../styles/theme/light-v2";
+
+.title {
+  margin-bottom: 10px;
+
+  & p {
+    font-weight: 700;
+  }
+}
+
+.containerChildrenProfile {
+  background-color: $text-0;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.accountDetailContainer {
+  background-color: $text-0;
+  padding: 1em;
+  padding-bottom: 80px;
+}

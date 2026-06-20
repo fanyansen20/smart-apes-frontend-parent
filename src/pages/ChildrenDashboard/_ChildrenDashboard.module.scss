@@ -1,0 +1,11 @@
+@import "../../styles/theme/light-v2";
+
+.containerChildrenDashboard {
+  margin-top: 2rem;
+
+  & .childrenProfile {
+    height: 100%;
+    background-color: $text-0;
+    padding: 1.1rem 1.3rem;
+  }
+}

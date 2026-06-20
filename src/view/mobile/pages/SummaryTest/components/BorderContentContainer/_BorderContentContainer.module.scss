@@ -1,0 +1,64 @@
+@import "../../../../../../styles/theme/light-v2";
+
+.border {
+  border: 1px $brand-500 solid;
+  border-radius: 6px;
+}
+
+.container {
+  @extend .border;
+
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+
+  & .fixedContainer {
+    @extend .border;
+
+    display: flex;
+    padding: 0.5rem;
+    margin-top: -25px;
+    background-color: $text-0;
+
+    & .fixedContainerTitle {
+      color: $brand-500;
+      font-size: 10px;
+      font-weight: 700;
+    }
+  }
+
+  & .contentContainer {
+    padding: 1rem;
+
+    & .contentFont {
+      color: $grey-400;
+      font-size: 10px;
+    }
+
+    & .contentTitle {
+      @extend .contentFont;
+
+      color: $brand-500;
+      text-align: center;
+    }
+
+    & .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    & .contentText {
+      @extend .contentFont;
+
+      text-align: justify;
+      width: 100%;
+    }
+
+    & .checkedIcon {
+      width: 12px;
+      height: 12px;
+      margin-right: 0.5rem;
+      margin-top: 0.1rem;
+    }
+  }
+}

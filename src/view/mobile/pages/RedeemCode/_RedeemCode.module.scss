@@ -1,0 +1,56 @@
+@import "../../../../styles/theme/light-v2";
+
+.borderContainer {
+  border-width: 1px;
+  border-color: $grey-200 !important;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.container {
+  background-color: $text-0;
+
+  & .title {
+    font-weight: 700;
+    color: $text-500;
+    margin-bottom: 0.5rem;
+  }
+
+  & .subtitle {
+    font-size: 14px;
+    color: $sec-text-500;
+  }
+
+  & .inputContainer {
+    @extend .borderContainer;
+
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
+    & .inputTitle {
+      font-size: 14px;
+      color: $sec-text-500;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  & .errorContainer {
+    & p {
+      font-size: 12px;
+      color: $error-500;
+    }
+  }
+
+  & .submitButton {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  & .buttonContainer {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}

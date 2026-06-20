@@ -1,0 +1,55 @@
+@import "../../styles/theme/light-v2";
+
+.memberBadgeHeader {
+  margin-top: 0.2rem;
+  cursor: pointer;
+
+  & p {
+    margin: 0;
+    text-align: left;
+    font-family: "Poppins";
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  & .memberHeading__Basic {
+    @extend .flexCenter;
+
+    color: $text-300;
+  }
+
+  & .memberHeading__Premium {
+    @extend .flexCenter;
+
+    color: $warning-200;
+  }
+
+  & .memberHeading__Elite {
+    @extend .flexCenter;
+
+    color: $brand-500;
+  }
+}
+
+.border {
+  border: 1px $brand-500 solid;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.upgradeMemberText {
+  @extend .flexCenter;
+
+  color: $brand-500;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.icon {
+  margin-right: 0.2rem;
+}

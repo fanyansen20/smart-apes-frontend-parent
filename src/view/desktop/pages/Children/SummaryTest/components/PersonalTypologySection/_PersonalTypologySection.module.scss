@@ -1,0 +1,71 @@
+@import "../../../../../../../styles/theme/light-v2";
+
+.containerTypology {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  position: relative;
+
+  & .transparentPlanetBG {
+    position: absolute;
+    left: -19rem;
+    top: 19rem;
+  }
+
+  & .contentSummary {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.75rem;
+
+    position: relative;
+
+    border-radius: 0.75rem;
+    background-image: linear-gradient(
+      to right top,
+      #a297ed,
+      #9c8ff0,
+      #9687f3,
+      #8f7ef6,
+      #8976f8
+    );
+    padding: 2.1rem 3rem;
+
+    & img {
+      width: 164px;
+      height: 188px;
+    }
+
+    & .textContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.75rem;
+
+      color: $text-0;
+
+      & h6 {
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      & p {
+        font-size: 1.12rem;
+        text-align: justify;
+        line-height: 1.75rem;
+      }
+    }
+  }
+
+  & .textSummaryContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & .titleHowTheyLearn {
+      line-height: 1.6rem;
+      text-align: justify;
+      color: $sec-text-300;
+    }
+  }
+}
